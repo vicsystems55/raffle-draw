@@ -53,7 +53,7 @@
 				<div class="brand-logo d-none d-lg-inline-block">
 					<div class="logo">
 						<a href="index.html">
-							<img src="assets/images/logo/logo.png" alt="logo">
+							<img src="assets/images/logo/logo.pg" alt="logo">
 						</a>
 					</div>
 				</div>
@@ -90,7 +90,7 @@
 					<div class="header-bottom">
 						<div class="header-wrapper justify-content-lg-end">
 							<div class="mobile-logo d-lg-none">
-								<a href="index.html"><img src="assets/images/logo/logo.png" alt="logo"></a>
+								<a href="index.html"><img src="assets/images/logo/logo.pg" alt="logo"></a>
 							</div>
 							<div class="menu-area">
 								<ul class="menu">
@@ -211,7 +211,7 @@
                         <div class="footer-middle-item-wrapper">
                             <div class="footer-middle-item mb-lg-0">
                                 <div class="fm-item-title mb-4">
-                                    <img src="{{config('app.url')}}raffle/assets/images/logo/logo.pn" alt="logo">
+                                    <img src="{{config('app.url')}}raffle/assets/images/logo/logo.p" alt="logo">
                                 </div>
                                 <div class="fm-item-content">
                                     <p class="mb-4">Upropriate brand economca sound technolog after covalent technology enable prospective wastng markets whereas propriate and brand economca sound technolog</p>
