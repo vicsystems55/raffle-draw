@@ -355,7 +355,7 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="footer-bottom-content text-center">
-                            <p>&copy;2022 <a href="index.html">Casina</a> - All Rights Reserved. Developed by <a href="https://themeforest.net/user/codexcoder">CodexCoder</a></p>
+                            <p>&copy;2022 <a href="index.html">Reliance Coop.</a> - All Rights Reserved. Developed by <a href="">vicSystems </a></p>
                         </div>
                     </div>
                 </div>
