@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>Purchase Ticket</title>
+	<title>Purchase Successful</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<!-- site favicon -->
@@ -95,8 +95,8 @@
 							<div class="menu-area">
 								<ul class="menu">
 									
-									<li><a href="contact.html">Home</a></li>
-                                    <li><a href="contact.html">Raffle Tickets</a></li>
+									<li><a href="/">Home</a></li>
+									<li><a href="">Raffle Tickets</a></li>
 
 								</ul>
 								<a href="login.html" class="login"><i class="icofont-user"></i> <span>LOG IN</span> </a>
@@ -123,78 +123,41 @@
 
 
 
-	<!-- ===========Banner Section start Here========== -->
-	<section class="pageheader-section " style="background-image: url(assets/images/pageheader/bg.jpg);">
+	<!-- ===========PageHeader Section Start Here========== -->
+	<section class="pageheader-section d-none" style="background-image: url(assets/images/pageheader/bg.jpg);">
 		<div class="container">
-            <div class="section-wrapper text-center text-uppercase">
-                <h2 class="pageheader-title">Registration Page</h2>
-                <nav aria-label="breadcrumb">
-                    <ol class="breadcrumb justify-content-center mb-0">
-                      <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                      <li class="breadcrumb-item active" aria-current="page">Registration</li>
-                    </ol>
-                </nav>
-            </div>
+			<div class="section-wrapper text-center text-uppercase">
+				<h2 class="pageheader-title">error page</h2>
+				<nav aria-label="breadcrumb">
+					<ol class="breadcrumb justify-content-center mb-0">
+						<li class="breadcrumb-item"><a href="index.html">Home</a></li>
+						<li class="breadcrumb-item active" aria-current="page">error page</li>
+					</ol>
+				</nav>
+			</div>
 		</div>
 	</section>
-	<!-- ===========Banner Section Ends Here========== -->
+	<!-- ===========PageHeader Section Ends Here========== -->
 
 
-
-	<!-- Login Section Section Starts Here -->
-    <div class="login-section  padding-bottom">
-        <div class=" container">
-            <div class="account-wrapper">
-                <h3 class="title">PURCHASE RAFFLE TICKETS</h3>
-                <p>Note raffle tickets will be sent to your email. Make sure to supply a valid email. Good Luck!!</p>
-                <form class="account-form text-start">
-					
-                    <div class="form-group">
-						<label>Firstname:</label>
-                        <input type="text" placeholder="First Name" name="Fname">
-                    </div>
-                    			
-				
-					<div class="form-group">
-						<label>Address:</label>
-                        <input type="text" name="Address">
-                    </div>
-					
-				
-                    <div class="form-group">
-						<label>Email:</label>
-                        <input type="text" name="email">
-                    </div>
-                    <div class="number-group">
-						<label>Phone Number:</label>
-						<select class="form-select" aria-label="Default select example">
-							<option selected>+98</option>
-							<option value="1">+88</option>
-							<option value="2">+99</option>
-							<option value="3">+77</option>
-						</select>
-                        <input type="text" name="number">
-                    </div>
-                    <div class="form-group">
-                        <button class="d-block default-button"><span>PROCEED TO PAYMENT</span></button>
-                    </div>
-                </form>
-                <div class="account-bottom d-none">
-                    <span class="d-block cate pt-10">Are you a member? <a href="login.html">Login</a></span>
-                    <span class="or"><span>or</span></span>
-                    <h5 class="subtitle">Register With Social Media</h5>
-                    <ul class="match-social-list d-flex flex-wrap align-items-center justify-content-center mt-4">
-                        <li><a href="#"><img src="assets/images/match/social-1.png" alt="vimeo"></a></li>
-                        <li><a href="#"><img src="assets/images/match/social-2.png" alt="youtube"></a></li>
-                        <li><a href="#"><img src="assets/images/match/social-3.png" alt="twitch"></a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Login Section Section Ends Here -->
-
-
+	<!-- ===========404 Section start Here========== -->
+	<section class="fore-zero padding-top padding-bottom">
+		<div class="container">
+			<div class="section-wrapper">
+				<div class="zero-item">
+					<div class="zero-thumb">
+						<img src="assets/images/404.png" alt="404">
+					</div>
+					<div class="zero-content">
+						<h2>You have successfully purchased your ticket.</h2>
+						<p>Details have been sent to your email.<i class="icofont-worried"></i></p>
+						<a href="index.html" class="default-button reverse-effect"><span>Go Back to Home <i  class="icofont-double-right"></i></span> </a>
+					</div>
+				</div>
+			</div>
+		</div>
+  </section>
+	<!-- ===========404 Section Ends Here========== -->
 
 
 	<!-- ================ footer Section start Here =============== -->
@@ -206,7 +169,7 @@
                         <div class="footer-top-item lab-item">
                             <div class="lab-inner">
                                 <div class="lab-thumb">
-                                    <img src="assets/images/footer/icons/01.png" alt="Phone-icon">
+                                    <img src="{{config('app.url')}}raffle/assets/images/footer/icons/01.png" alt="Phone-icon">
                                 </div>
                                 <div class="lab-content">
                                     <span>Phone Number : +88012 345 678 912</span>
@@ -218,7 +181,7 @@
                         <div class="footer-top-item lab-item">
                             <div class="lab-inner">
                                 <div class="lab-thumb">
-                                    <img src="assets/images/footer/icons/02.png" alt="email-icon">
+                                    <img src="{{config('app.url')}}raffle/assets/images/footer/icons/02.png" alt="email-icon">
                                 </div>
                                 <div class="lab-content">
                                     <span>Email : youremail@gmail.com</span>
@@ -230,7 +193,7 @@
                         <div class="footer-top-item lab-item">
                             <div class="lab-inner">
                                 <div class="lab-thumb">
-                                    <img src="assets/images/footer/icons/03.png" alt="location-icon">
+                                    <img src="{{config('app.url')}}raffle/assets/images/footer/icons/03.png" alt="location-icon">
                                 </div>
                                 <div class="lab-content">
                                     <span>Address : 30 North West New York</span>
@@ -248,14 +211,14 @@
                         <div class="footer-middle-item-wrapper">
                             <div class="footer-middle-item mb-lg-0">
                                 <div class="fm-item-title mb-4">
-                                    <img src="assets/images/logo/logo.png" alt="logo">
+                                    <img src="{{config('app.url')}}raffle/assets/images/logo/logo.pn" alt="logo">
                                 </div>
                                 <div class="fm-item-content">
                                     <p class="mb-4">Upropriate brand economca sound technolog after covalent technology enable prospective wastng markets whereas propriate and brand economca sound technolog</p>
 									<ul class="match-social-list d-flex flex-wrap align-items-center">
-										<li><a href="#"><img src="assets/images/match/social-1.png" alt="vimeo"></a></li>
-										<li><a href="#"><img src="assets/images/match/social-2.png" alt="youtube"></a></li>
-										<li><a href="#"><img src="assets/images/match/social-3.png" alt="twitch"></a></li>
+										<li><a href="#"><img src="{{config('app.url')}}raffle/assets/images/match/social-1.png" alt="vimeo"></a></li>
+										<li><a href="#"><img src="{{config('app.url')}}raffle/assets/images/match/social-2.png" alt="youtube"></a></li>
+										<li><a href="#"><img src="{{config('app.url')}}raffle/assets/images/match/social-3.png" alt="twitch"></a></li>
 									</ul>
                                 </div>
                             </div>
@@ -271,7 +234,7 @@
                                     <div class="fm-item-widget lab-item">
                                         <div class="lab-inner">
                                             <div class="lab-thumb">
-                                                <a href="#"> <img src="assets/images/footer/01.jpg" alt="footer-widget-img" class="rounded-3"></a>
+                                                <a href="#"> <img src="{{config('app.url')}}raffle/assets/images/footer/01.jpg" alt="footer-widget-img" class="rounded-3"></a>
                                             </div>
                                             <div class="lab-content">
                                                 <a href="blog-single.html"><h6>free Poker Game</h6></a>
@@ -289,7 +252,7 @@
                                     <div class="fm-item-widget lab-item">
                                         <div class="lab-inner">
                                             <div class="lab-thumb">
-                                                <a href="#"><img src="assets/images/footer/02.jpg" alt="footer-widget-img" class="rounded-3"></a>
+                                                <a href="#"><img src="{{config('app.url')}}raffle/assets/images/footer/02.jpg" alt="footer-widget-img" class="rounded-3"></a>
                                             </div>
                                             <div class="lab-content">
                                                 <a href="blog-single.html"><h6>CLUB Poker Game</h6></a>
@@ -307,7 +270,7 @@
                                     <div class="fm-item-widget lab-item">
                                         <div class="lab-inner">
                                             <div class="lab-thumb">
-                                                <a href="#"><img src="assets/images/footer/03.jpg" alt="footer-widget-img" class="rounded-3"></a>
+                                                <a href="#"><img src="{{config('app.url')}}raffle/assets/images/footer/03.jpg" alt="footer-widget-img" class="rounded-3"></a>
                                             </div>
                                             <div class="lab-content">
                                                 <a href="blog-single.html"><h6>ROYAL Poker Game</h6></a>
@@ -362,7 +325,7 @@
             </div>
         </div>
     </footer>
-    <!-- ================ footer Section end Here =============== -->
+  	<!-- ================ footer Section end Here =============== -->
 
 
 

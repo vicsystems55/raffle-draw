@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>Casina</title>
+	<title>Reliance RaffleDraw</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<!-- site favicon -->
@@ -39,7 +39,7 @@
 
 	<!-- ==========shape image Starts Here========== -->
 	<div class="body-shape">
-		<img src="assets/images/shape/body-shape.png" alt="shape">
+		<img src="{{config('app.url')}}raffle/assets/images/shape/body-shape.png" alt="shape">
 	</div>
 	<!-- ==========shape image end Here========== -->
 
@@ -53,12 +53,12 @@
 				<div class="brand-logo d-none d-lg-inline-block">
 					<div class="logo">
 						<a href="index.html">
-							<img src="assets/images/logo/logo.png" alt="logo">
+							<img src="{{config('app.url')}}raffle/assets/images/logo/logo.pn" alt="logo">
 						</a>
 					</div>
 				</div>
 				<div class="header-menu-part">
-					<div class="header-top">
+					<div class="header-top d-none">
 						<div class="header-top-area">
 							<ul class="left">
 								<li>
@@ -90,11 +90,11 @@
 					<div class="header-bottom">
 						<div class="header-wrapper justify-content-lg-end">
 							<div class="mobile-logo d-lg-none">
-								<a href="index.html"><img src="assets/images/logo/logo.png" alt="logo"></a>
+								<a href="index.html"><img src="{{config('app.url')}}raffle/assets/images/logo/logo.png" alt="logo"></a>
 							</div>
 							<div class="menu-area">
 								<ul class="menu">
-									<li>
+									{{-- <li>
 										<a href="#0">Home</a>
 										<ul class="submenu">
 											<li><a href="index.html" class="active">Home  Page One</a></li>
@@ -143,8 +143,10 @@
 											<li><a href="blog-2.html">Blog 2</a></li>
 											<li><a href="blog-single.html">Blog Single</a></li>
 										</ul>
-									</li>
-									<li><a href="contact.html">Contact</a></li>
+									</li> --}}
+									<li><a href="/">Home</a></li>
+                                    <li><a href="/">Raffle Tickets</a></li>
+                                    
 								</ul>
 								<a href="login.html" class="login"><i class="icofont-user"></i> <span>LOG IN</span> </a>
 								<a href="signup.html" class="signup"><i class="icofont-users"></i> <span>SIGN UP</span></a>
@@ -176,11 +178,11 @@
 			<div class="row g-0">
 				<div class="col-xl-6 col-lg-7 col-12">
 					<div class="banner__content">
-						<h3>the best website</h3>
-						<h1>Online Casino</h1>
-						<h2>Genuine Money Transaction</h2>
-						<p>Assertively communicate an expanded array of mindshare rather than diverse technologies for magnetic applications eamlessly virtual then Conveniently monetize synergistic human capital</p>
-						<a href="login.html" class="default-button"><span>join us today  <i class="icofont-play-alt-1"></i></span> </a>
+						<h3>RELIANCE COOPERATIVE</h3>
+						<h1>Raffle Tickets</h1>
+						<h2>Hurry now, its here again</h2>
+						<p></p>
+						<a href="{{route('register')}}" class="default-button"><span>join us today  <i class="icofont-play-alt-1"></i></span> </a>
 					</div>
 				</div>
 			</div>
@@ -222,7 +224,7 @@
 	<section class="collection-section padding-top padding-bottom">
 		<div class="container">
 			<div class="section-header">
-				<h2>welcome to casino</h2>
+				<h2>welcome to reliance raffle</h2>
 			</div>
 			<div class="section-wrapper game">
 				<div class="row g-4 justify-content-center">
@@ -230,7 +232,7 @@
 						<div class="game__item item-layer">
 							<div class="game__inner text-center">
 								<div class="game__thumb">
-									<img src="assets/images/game/01.png" alt="game-img">
+									<img src="{{config('app.url')}}raffle/assets/images/game/01.png" alt="game-img">
 								</div>
 								<div class="game__content">
 									<h4><a href="team-single.html">Advice And Guide</a> </h4>
@@ -243,7 +245,7 @@
 						<div class="game__item item-layer">
 							<div class="game__inner text-center">
 								<div class="game__thumb">
-									<img src="assets/images/game/02.png" alt="game-img">
+									<img src="{{config('app.url')}}raffle/assets/images/game/02.png" alt="game-img">
 								</div>
 								<div class="game__content">
 									<h4><a href="team-single.html">Great Solutions</a> </h4>
@@ -256,7 +258,7 @@
 						<div class="game__item item-layer">
 							<div class="game__inner text-center">
 								<div class="game__thumb">
-									<img src="assets/images/game/03.png" alt="game-img">
+									<img src="{{config('app.url')}}raffle/assets/images/game/03.png" alt="game-img">
 								</div>
 								<div class="game__content">
 									<h4><a href="team-single.html">Support in Person</a> </h4>
@@ -273,8 +275,8 @@
 
 
 	<!-- ===========Jaqport Section Ends Here========== -->
-	<div class="jaqport padding-top padding-bottom" style="background-image: url(assets/images/jaqport/jaqport-bg.jpg);">
-		<div class="container">
+	<div class="jaqport padding-top padding-bottom d-none" style="background-image: url(assets/images/jaqport/jaqport-bg.jpg);">
+		<div class="container d-none">
 			<div class="section-header">
 				<h2>CASINO JACKPOTS</h2>
 				<p>At Modeltheme, we show only the best websites and portfolios built completely with passion, simplicity and creativity !</p>
@@ -298,7 +300,7 @@
 											<p>1.Christopher</p>
 										</div>
 										<div class="jaqport__gamelist-middle">
-											<img src="assets/images/jaqport/country/01.jpg" alt="jaqport-thumb" class="rounded-circle">
+											<img src="{{config('app.url')}}raffle/assets/images/jaqport/country/01.jpg" alt="jaqport-thumb" class="rounded-circle">
 										</div>
 										<div class="jaqport__gamelist-right">
 											<h6>$2365.96</h6>
@@ -309,7 +311,7 @@
 											<p>2.Mark</p>
 										</div>
 										<div class="jaqport__gamelist-middle">
-											<img src="assets/images/jaqport/country/02.jpg" alt="jaqport-thumb" class="rounded-circle">
+											<img src="{{config('app.url')}}raffle/assets/images/jaqport/country/02.jpg" alt="jaqport-thumb" class="rounded-circle">
 										</div>
 										<div class="jaqport__gamelist-right">
 											<h6>$2365.96</h6>
@@ -320,7 +322,7 @@
 											<p>3.Craigr</p>
 										</div>
 										<div class="jaqport__gamelist-middle">
-											<img src="assets/images/jaqport/country/03.jpg" alt="jaqport-thumb" class="rounded-circle">
+											<img src="{{config('app.url')}}raffle/assets/images/jaqport/country/03.jpg" alt="jaqport-thumb" class="rounded-circle">
 										</div>
 										<div class="jaqport__gamelist-right">
 											<h6>$2365.96</h6>
@@ -331,7 +333,7 @@
 											<p>4.Philip</p>
 										</div>
 										<div class="jaqport__gamelist-middle">
-											<img src="assets/images/jaqport/country/04.jpg" alt="jaqport-thumb" class="rounded-circle">
+											<img src="{{config('app.url')}}raffle/assets/images/jaqport/country/04.jpg" alt="jaqport-thumb" class="rounded-circle">
 										</div>
 										<div class="jaqport__gamelist-right">
 											<h6>$2365.96</h6>
@@ -342,7 +344,7 @@
 											<p>5.Jimmy</p>
 										</div>
 										<div class="jaqport__gamelist-middle">
-											<img src="assets/images/jaqport/country/05.jpg" alt="jaqport-thumb" class="rounded-circle">
+											<img src="{{config('app.url')}}raffle/assets/images/jaqport/country/05.jpg" alt="jaqport-thumb" class="rounded-circle">
 										</div>
 										<div class="jaqport__gamelist-right">
 											<h6>$2365.96</h6>
@@ -353,7 +355,7 @@
 											<p>6.Arthur</p>
 										</div>
 										<div class="jaqport__gamelist-middle">
-											<img src="assets/images/jaqport/country/06.jpg" alt="jaqport-thumb" class="rounded-circle">
+											<img src="{{config('app.url')}}raffle/assets/images/jaqport/country/06.jpg" alt="jaqport-thumb" class="rounded-circle">
 										</div>
 										<div class="jaqport__gamelist-right">
 											<h6>$2365.96</h6>
@@ -364,7 +366,7 @@
 											<p>7.Jaime</p>
 										</div>
 										<div class="jaqport__gamelist-middle">
-											<img src="assets/images/jaqport/country/07.jpg" alt="jaqport-thumb" class="rounded-circle">
+											<img src="{{config('app.url')}}raffle/assets/images/jaqport/country/07.jpg" alt="jaqport-thumb" class="rounded-circle">
 										</div>
 										<div class="jaqport__gamelist-right">
 											<h6>$2365.96</h6>
@@ -375,7 +377,7 @@
 											<p>8.Perry</p>
 										</div>
 										<div class="jaqport__gamelist-middle">
-											<img src="assets/images/jaqport/country/08.jpg" alt="jaqport-thumb" class="rounded-circle">
+											<img src="{{config('app.url')}}raffle/assets/images/jaqport/country/08.jpg" alt="jaqport-thumb" class="rounded-circle">
 										</div>
 										<div class="jaqport__gamelist-right">
 											<h6>$2365.96</h6>
@@ -386,7 +388,7 @@
 											<p>9.Harold</p>
 										</div>
 										<div class="jaqport__gamelist-middle">
-											<img src="assets/images/jaqport/country/09.jpg" alt="jaqport-thumb" class="rounded-circle">
+											<img src="{{config('app.url')}}raffle/assets/images/jaqport/country/09.jpg" alt="jaqport-thumb" class="rounded-circle">
 										</div>
 										<div class="jaqport__gamelist-right">
 											<h6>$2365.96</h6>
@@ -397,7 +399,7 @@
 											<p>10.Jerry</p>
 										</div>
 										<div class="jaqport__gamelist-middle">
-											<img src="assets/images/jaqport/country/10.jpg" alt="jaqport-thumb" class="rounded-circle">
+											<img src="{{config('app.url')}}raffle/assets/images/jaqport/country/10.jpg" alt="jaqport-thumb" class="rounded-circle">
 										</div>
 										<div class="jaqport__gamelist-right">
 											<h6>$2365.96</h6>
@@ -408,7 +410,7 @@
 											<p>11.Shawn</p>
 										</div>
 										<div class="jaqport__gamelist-middle">
-											<img src="assets/images/jaqport/country/11.jpg" alt="jaqport-thumb" class="rounded-circle">
+											<img src="{{config('app.url')}}raffle/assets/images/jaqport/country/11.jpg" alt="jaqport-thumb" class="rounded-circle">
 										</div>
 										<div class="jaqport__gamelist-right">
 											<h6>$2365.96</h6>
@@ -419,7 +421,7 @@
 											<p>12.Walter</p>
 										</div>
 										<div class="jaqport__gamelist-middle">
-											<img src="assets/images/jaqport/country/12.jpg" alt="jaqport-thumb" class="rounded-circle">
+											<img src="{{config('app.url')}}raffle/assets/images/jaqport/country/12.jpg" alt="jaqport-thumb" class="rounded-circle">
 										</div>
 										<div class="jaqport__gamelist-right">
 											<h6>$2365.96</h6>
@@ -466,7 +468,7 @@
 											<div class="game__item item-layer">
 												<div class="game__inner text-center p-0">
 													<div class="game__thumb mb-0">
-														<img src="assets/images/jaqport/01.jpg" alt="game-img" class="rounded-3 w-100">
+														<img src="{{config('app.url')}}raffle/assets/images/jaqport/01.jpg" alt="game-img" class="rounded-3 w-100">
 													</div>
 													<div class="game__overlay">
 														<h4>poker games</h4>
@@ -480,7 +482,7 @@
 											<div class="game__item item-layer">
 												<div class="game__inner text-center p-0">
 													<div class="game__thumb mb-0">
-														<img src="assets/images/jaqport/02.jpg" alt="game-img" class="rounded-3 w-100">
+														<img src="{{config('app.url')}}raffle/assets/images/jaqport/02.jpg" alt="game-img" class="rounded-3 w-100">
 													</div>
 													<div class="game__overlay">
 														<h4>poker games</h4>
@@ -494,7 +496,7 @@
 											<div class="game__item item-layer">
 												<div class="game__inner text-center p-0">
 													<div class="game__thumb mb-0">
-														<img src="assets/images/jaqport/03.jpg" alt="game-img" class="rounded-3 w-100">
+														<img src="{{config('app.url')}}raffle/assets/images/jaqport/03.jpg" alt="game-img" class="rounded-3 w-100">
 													</div>
 													<div class="game__overlay">
 														<h4>poker games</h4>
@@ -522,7 +524,7 @@
 											<div class="game__item item-layer">
 												<div class="game__inner text-center p-0">
 													<div class="game__thumb mb-0">
-														<img src="assets/images/jaqport/04.jpg" alt="game-img" class="rounded-3 w-100">
+														<img src="{{config('app.url')}}raffle/assets/images/jaqport/04.jpg" alt="game-img" class="rounded-3 w-100">
 													</div>
 													<div class="game__overlay">
 														<h4>poker games</h4>
@@ -536,7 +538,7 @@
 											<div class="game__item item-layer">
 												<div class="game__inner text-center p-0">
 													<div class="game__thumb mb-0">
-														<img src="assets/images/jaqport/05.jpg" alt="game-img" class="rounded-3 w-100">
+														<img src="{{config('app.url')}}raffle/assets/images/jaqport/05.jpg" alt="game-img" class="rounded-3 w-100">
 													</div>
 													<div class="game__overlay">
 														<h4>poker games</h4>
@@ -550,7 +552,7 @@
 											<div class="game__item item-layer">
 												<div class="game__inner text-center p-0">
 													<div class="game__thumb mb-0">
-														<img src="assets/images/jaqport/06.jpg" alt="game-img" class="rounded-3 w-100">
+														<img src="{{config('app.url')}}raffle/assets/images/jaqport/06.jpg" alt="game-img" class="rounded-3 w-100">
 													</div>
 													<div class="game__overlay">
 														<h4>poker games</h4>
@@ -573,8 +575,8 @@
 
 
 	<!-- ===========Collection Section Start Here========== -->
-	<section class="collection-section padding-top padding-bottom">
-		<div class="container">
+	<section class="collection-section padding-top padding-bottom d-none">
+		<div class="container d-none">
 			<div class="section-header">
 				<h2>BE IN CONTROL</h2>
 				<p>At Modeltheme, we show only the best websites and portfolios built completely with passion, simplicity and creativity !</p>
@@ -585,7 +587,7 @@
 						<div class="game__item item-layer">
 							<div class="game__inner text-center">
 								<div class="game__thumb">
-									<img src="assets/images/game/04.png" alt="game-img">
+									<img src="{{config('app.url')}}raffle/assets/images/game/04.png" alt="game-img">
 								</div>
 								<div class="game__content">
 									<h4><a href="#">PAYMENT LIMITATION</a> </h4>
@@ -598,7 +600,7 @@
 						<div class="game__item item-layer">
 							<div class="game__inner text-center">
 								<div class="game__thumb">
-									<img src="assets/images/game/05.png" alt="game-img">
+									<img src="{{config('app.url')}}raffle/assets/images/game/05.png" alt="game-img">
 								</div>
 								<div class="game__content">
 									<h4><a href="team-single.html">Great Solutions</a> </h4>
@@ -611,7 +613,7 @@
 						<div class="game__item item-layer">
 							<div class="game__inner text-center">
 								<div class="game__thumb">
-									<img src="assets/images/game/06.png" alt="game-img">
+									<img src="{{config('app.url')}}raffle/assets/images/game/06.png" alt="game-img">
 								</div>
 								<div class="game__content">
 									<h4><a href="team-single.html">Support in Person</a> </h4>
@@ -624,7 +626,7 @@
 						<div class="game__item item-layer">
 							<div class="game__inner text-center">
 								<div class="game__thumb">
-									<img src="assets/images/game/07.png" alt="game-img">
+									<img src="{{config('app.url')}}raffle/assets/images/game/07.png" alt="game-img">
 								</div>
 								<div class="game__content">
 									<h4><a href="team-single.html">Support in Person</a> </h4>
@@ -641,8 +643,8 @@
 
 
 	<!-- ===========Game Section Ends Here========== -->
-    <div class="game-section padding-top padding-bottom overflow-hidden" style="background-image:url(assets/images/match/bg.jpg)">
-        <div class="container">
+    <div class="game-section padding-top padding-bottom overflow-hidden d-none" style="background-image:url(assets/images/match/bg.jpg)">
+        <div class="container d-none">
 			<div class="section-header">
 				<h2>RELATED OTHER GAMES</h2>
 			</div>
@@ -658,7 +660,7 @@
                     <div class="game__item item-layer">
 						<div class="game__inner text-center p-0">
 							<div class="game__thumb mb-0">
-								<img src="assets/images/game/01.jpg" alt="game-img" class="rounded-3 w-100">
+								<img src="{{config('app.url')}}raffle/assets/images/game/01.jpg" alt="game-img" class="rounded-3 w-100">
 							</div>
 							<div class="game__overlay">
 								<div class="game__overlay-left">
@@ -676,7 +678,7 @@
                     <div class="game__item item-layer">
 						<div class="game__inner text-center p-0">
 							<div class="game__thumb mb-0">
-								<img src="assets/images/game/02.jpg" alt="game-img" class="rounded-3 w-100">
+								<img src="{{config('app.url')}}raffle/assets/images/game/02.jpg" alt="game-img" class="rounded-3 w-100">
 							</div>
 							<div class="game__overlay">
 								<div class="game__overlay-left">
@@ -694,7 +696,7 @@
                     <div class="game__item item-layer">
 						<div class="game__inner text-center p-0">
 							<div class="game__thumb mb-0">
-								<img src="assets/images/game/03.jpg" alt="game-img" class="rounded-3 w-100">
+								<img src="{{config('app.url')}}raffle/assets/images/game/03.jpg" alt="game-img" class="rounded-3 w-100">
 							</div>
 							<div class="game__overlay">
 								<div class="game__overlay-left">
@@ -712,7 +714,7 @@
                     <div class="game__item item-layer">
 						<div class="game__inner text-center p-0">
 							<div class="game__thumb mb-0">
-								<img src="assets/images/game/04.jpg" alt="game-img" class="rounded-3 w-100">
+								<img src="{{config('app.url')}}raffle/assets/images/game/04.jpg" alt="game-img" class="rounded-3 w-100">
 							</div>
 							<div class="game__overlay">
 								<div class="game__overlay-left">
@@ -744,7 +746,7 @@
 				<div class="col-lg-6 col-12">
 					<div class="faq-right-part">
 						<div class="faq-thumb">
-							<img src="assets/images/faq/01.png" alt="faq-thumb">
+							<img src="{{config('app.url')}}raffle/assets/images/faq/01.png" alt="faq-thumb">
 						</div>
 					</div>
 				</div>
@@ -820,13 +822,13 @@
 
 
 	<!-- ===========Game Section Ends Here========== -->
-    <div class="game game-style3 overflow-hidden" style="background-image:url(assets/images/game/bg.jpg)">
-        <div class="container">
+    <div class="game game-style3 overflow-hidden d-none" style="background-image:url(assets/images/game/bg.jpg)">
+        <div class="container d-none">
             <div class="section-wrapper">
 				<div class="row justify-content-center g-4 align-items-center">
 					<div class="col-lg-6 col-12">
 						<div class="game__thumb">
-							<img src="assets/images/game/08.png" alt="game-thumb">
+							<img src="{{config('app.url')}}raffle/assets/images/game/08.png" alt="game-thumb">
 						</div>
 					</div>
 					<div class="col-lg-6 col-12">
@@ -846,8 +848,8 @@
 
 
 	<!-- ===========Testimonial Section Start Here========== -->
-	<div class="testimonial padding-top padding-bottom" style="background-image:url(assets/images/testimonial/bg.png)">
-		<div class="container">
+	<div class="testimonial padding-top padding-bottom d-none" style="background-image:url(assets/images/testimonial/bg.png)">
+		<div class="container d-none">
 			<div class="section-header">
 				<h2>our gamers reviews</h2>
 				<p>At Modeltheme, we show only the best websites and portfolios built completely with passion simplicity and creativity !</p>
@@ -856,7 +858,7 @@
 				<div class="row g-4">
 					<div class="col-lg-6 col-12">
 						<div class="testimonial__thumb position-relative">
-							<img src="assets/images/testimonial/03.jpg" alt="testimonial">
+							<img src="{{config('app.url')}}raffle/assets/images/testimonial/03.jpg" alt="testimonial">
 							<div class="video-icon">
 								<a href="https://www.youtube.com/embed/g5eQgEuiFC8" data-rel="lightcase">
 									<i class="icofont-play-alt-1"></i>
@@ -874,7 +876,7 @@
 											<div class="testimonial-head">
 												<div class="testi-top">
 													<div class="testimonial-thumb">
-														<img src="assets/images/testimonial/01.jpg" alt="testimonial">
+														<img src="{{config('app.url')}}raffle/assets/images/testimonial/01.jpg" alt="testimonial">
 													</div>
 													<div class="name-des">
 														<h5>Madley Pondor</h5>
@@ -902,7 +904,7 @@
 											<div class="testimonial-head">
 												<div class="testi-top">
 													<div class="testimonial-thumb">
-														<img src="assets/images/testimonial/02.jpg" alt="testimonial">
+														<img src="{{config('app.url')}}raffle/assets/images/testimonial/02.jpg" alt="testimonial">
 													</div>
 													<div class="name-des">
 														<h5>Oliver Beddows</h5>
@@ -946,7 +948,7 @@
                         <div class="footer-top-item lab-item">
                             <div class="lab-inner">
                                 <div class="lab-thumb">
-                                    <img src="assets/images/footer/icons/01.png" alt="Phone-icon">
+                                    <img src="{{config('app.url')}}raffle/assets/images/footer/icons/01.png" alt="Phone-icon">
                                 </div>
                                 <div class="lab-content">
                                     <span>Phone Number : +88012 345 678 912</span>
@@ -958,7 +960,7 @@
                         <div class="footer-top-item lab-item">
                             <div class="lab-inner">
                                 <div class="lab-thumb">
-                                    <img src="assets/images/footer/icons/02.png" alt="email-icon">
+                                    <img src="{{config('app.url')}}raffle/assets/images/footer/icons/02.png" alt="email-icon">
                                 </div>
                                 <div class="lab-content">
                                     <span>Email : youremail@gmail.com</span>
@@ -970,7 +972,7 @@
                         <div class="footer-top-item lab-item">
                             <div class="lab-inner">
                                 <div class="lab-thumb">
-                                    <img src="assets/images/footer/icons/03.png" alt="location-icon">
+                                    <img src="{{config('app.url')}}raffle/assets/images/footer/icons/03.png" alt="location-icon">
                                 </div>
                                 <div class="lab-content">
                                     <span>Address : 30 North West New York</span>
@@ -988,14 +990,14 @@
                         <div class="footer-middle-item-wrapper">
                             <div class="footer-middle-item mb-lg-0">
                                 <div class="fm-item-title mb-4">
-                                    <img src="assets/images/logo/logo.png" alt="logo">
+                                    <img src="{{config('app.url')}}raffle/assets/images/logo/logo.pn" alt="logo">
                                 </div>
                                 <div class="fm-item-content">
                                     <p class="mb-4">Upropriate brand economca sound technolog after covalent technology enable prospective wastng markets whereas propriate and brand economca sound technolog</p>
 									<ul class="match-social-list d-flex flex-wrap align-items-center">
-										<li><a href="#"><img src="assets/images/match/social-1.png" alt="vimeo"></a></li>
-										<li><a href="#"><img src="assets/images/match/social-2.png" alt="youtube"></a></li>
-										<li><a href="#"><img src="assets/images/match/social-3.png" alt="twitch"></a></li>
+										<li><a href="#"><img src="{{config('app.url')}}raffle/assets/images/match/social-1.png" alt="vimeo"></a></li>
+										<li><a href="#"><img src="{{config('app.url')}}raffle/assets/images/match/social-2.png" alt="youtube"></a></li>
+										<li><a href="#"><img src="{{config('app.url')}}raffle/assets/images/match/social-3.png" alt="twitch"></a></li>
 									</ul>
                                 </div>
                             </div>
@@ -1003,7 +1005,7 @@
                     </div>
                     <div class="col-lg-4 col-md-6 col-12">
                         <div class="footer-middle-item-wrapper">
-                            <div class="footer-middle-item mb-lg-0">
+                            <div class="footer-middle-item mb-lg-0 d-none">
                                 <div class="fm-item-title">
                                     <h4>Top jackpot games</h4>
                                 </div>
@@ -1011,7 +1013,7 @@
                                     <div class="fm-item-widget lab-item">
                                         <div class="lab-inner">
                                             <div class="lab-thumb">
-                                                <a href="#"> <img src="assets/images/footer/01.jpg" alt="footer-widget-img" class="rounded-3"></a>
+                                                <a href="#"> <img src="{{config('app.url')}}raffle/assets/images/footer/01.jpg" alt="footer-widget-img" class="rounded-3"></a>
                                             </div>
                                             <div class="lab-content">
                                                 <a href="blog-single.html"><h6>free Poker Game</h6></a>
@@ -1029,7 +1031,7 @@
                                     <div class="fm-item-widget lab-item">
                                         <div class="lab-inner">
                                             <div class="lab-thumb">
-                                                <a href="#"><img src="assets/images/footer/02.jpg" alt="footer-widget-img" class="rounded-3"></a>
+                                                <a href="#"><img src="{{config('app.url')}}raffle/assets/images/footer/02.jpg" alt="footer-widget-img" class="rounded-3"></a>
                                             </div>
                                             <div class="lab-content">
                                                 <a href="blog-single.html"><h6>CLUB Poker Game</h6></a>
@@ -1047,7 +1049,7 @@
                                     <div class="fm-item-widget lab-item">
                                         <div class="lab-inner">
                                             <div class="lab-thumb">
-                                                <a href="#"><img src="assets/images/footer/03.jpg" alt="footer-widget-img" class="rounded-3"></a>
+                                                <a href="#"><img src="{{config('app.url')}}raffle/assets/images/footer/03.jpg" alt="footer-widget-img" class="rounded-3"></a>
                                             </div>
                                             <div class="lab-content">
                                                 <a href="blog-single.html"><h6>ROYAL Poker Game</h6></a>
