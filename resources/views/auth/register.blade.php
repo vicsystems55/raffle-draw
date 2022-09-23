@@ -147,36 +147,43 @@
             <div class="account-wrapper">
                 <h3 class="title">PURCHASE RAFFLE TICKETS</h3>
                 <p>Note raffle tickets will be sent to your email. Make sure to supply a valid email. Good Luck!!</p>
-                <form class="account-form text-start">
-					
+                <form method="post" action="{{route('register_lottery')}}" class="account-form text-start">
+					@csrf
                     <div class="form-group">
-						<label>Firstname:</label>
-                        <input type="text" placeholder="First Name" name="Fname">
+						<label>Fullname:</label>
+                        <input type="text" placeholder="Fullname" name="name">
                     </div>
                     			
 				
 					<div class="form-group">
 						<label>Address:</label>
-                        <input type="text" name="Address">
+                        <input type="text" placeholder="Enter address" name="address">
                     </div>
 					
 				
                     <div class="form-group">
 						<label>Email:</label>
-                        <input type="text" name="email">
+                        <input type="text" placeholder="Enter email" name="email">
                     </div>
+
+                    <div class="form-group">
+						<label>Number of tickets: </label>
+                        <input type="number" placeholder="" value="1" name="no_tickets">
+                    </div>
+                    
                     <div class="number-group">
 						<label>Phone Number:</label>
-						<select class="form-select" aria-label="Default select example">
-							<option selected>+98</option>
-							<option value="1">+88</option>
+						<select class="form-select"  aria-label="Default select example">
+							<option selected>+234</option>
+							{{-- <option value="1">+88</option>
 							<option value="2">+99</option>
-							<option value="3">+77</option>
+							<option value="3">+77</option> --}}
 						</select>
-                        <input type="text" name="number">
+                        <input type="text" name="phone">
                     </div>
+                    
                     <div class="form-group">
-                        <button class="d-block default-button"><span>PROCEED TO PAYMENT</span></button>
+                        <button type="submit" class="d-block default-button"><span>PROCEED TO PAYMENT</span></button>
                     </div>
                 </form>
                 <div class="account-bottom d-none">

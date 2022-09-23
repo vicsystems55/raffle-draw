@@ -4,41 +4,44 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use App\Http\Requests;
+use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Redirect;
+use Paystack;
 use App\LotteryTicketOrder;
-
 use PDF;
-
 use Illuminate\Support\Facades\Storage;
-
 use Illuminate\Support\Facades\Mail;
-
 use App\Mail\TicketPurchaseMail;
 
-use Paystack;
 
-class LotteryTicketOrderController extends Controller
+class PaymentController extends Controller
 {
-    //
 
-    public function register(Request $request)
+    /**
+     * Redirect the User to Paystack Payment Page
+     * @return Url
+     */
+    public function redirectToGateway()
     {
+        try{
+            return Paystack::getAuthorizationUrl()->redirectNow();
+        }catch(\Exception $e) {
+            return Redirect::back()->withMessage(['msg'=>'The paystack token has expired. Please refresh the page and try again.', 'type'=>'error']);
+        }        
+    }
 
-     
+    /**
+     * Obtain Paystack payment information
+     * @return void
+     */
+    public function handleGatewayCallback(Request $request)
+    {
+        $paymentDetails = Paystack::getPaymentData();
 
+        // dd($paymentDetails);
 
-        $data = array(
-            "amount" => $request->no_tickets * 100000,
-            "reference" => '4545jg8gjh'.rand(10000,99999),
-            "email" => $request->email,
-            "currency" => "NGN",
-            "orderID" => 23456,
-            "_token" =>  $request->_token,
-            'we' => 'wa',
-            "callback_url" => config('app.url').'payment/callback?no_tickets='.$request->no_tickets.'&address='.$request->address.'&name='.$request->name.'&email='.$request->email.'&phone='.$request->phone,
-            
-        );
-    
-        return Paystack::getAuthorizationUrl($data)->redirectNow();
+        // return $request->all();
 
         for ($i=0; $i < $request->no_tickets ; $i++) { 
 
@@ -83,5 +86,8 @@ class LotteryTicketOrderController extends Controller
         
 
         return redirect('/success');
+        // Now you have the payment details,
+        // you can store the authorization_code in your db to allow for recurrent subscriptions
+        // you can then redirect or do whatever you want
     }
 }
