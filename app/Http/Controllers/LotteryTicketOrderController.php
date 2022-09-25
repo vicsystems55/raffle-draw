@@ -33,7 +33,6 @@ class LotteryTicketOrderController extends Controller
             "currency" => "NGN",
             "orderID" => 23456,
             "_token" =>  $request->_token,
-            'we' => 'wa',
             "callback_url" => config('app.url').'payment/callback?no_tickets='.$request->no_tickets.'&address='.$request->address.'&name='.$request->name.'&email='.$request->email.'&phone='.$request->phone,
             
         );
