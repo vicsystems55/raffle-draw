@@ -25,6 +25,9 @@ Route::get('/success', 'HomeController@success')->name('home');
 
 Route::post('/register_lottery', 'LotteryTicketOrderController@register')->name('register_lottery');
 
+
+Route::get('/register_lotterx', 'LotteryTicketOrderController@registerx')->name('register_lotteryz');
+
 Route::post('/pay', 'PaymentController@redirectToGateway')->name('pay');
 
 Route::get('/payment/callback', 'PaymentController@handleGatewayCallback');

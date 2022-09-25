@@ -173,7 +173,7 @@
 
 
 	<!-- ===========Banner Section start Here========== -->
-	<section class="banner" style="background-image: url(assets/images/banner/bg.jpg);">
+	<section class="banner" style="background-image: url(assets/images/banner/bg.jpg); padding-top: 200px;">
 		<div class="container">
 			<div class="row g-0">
 				<div class="col-xl-6 col-lg-7 col-12">
@@ -746,7 +746,7 @@
 				<div class="col-lg-6 col-12">
 					<div class="faq-right-part">
 						<div class="faq-thumb">
-							<img src="{{config('app.url')}}raffle/assets/images/faq/01.png" alt="faq-thumb">
+							<img src="{{config('app.url')}}images/headerimage.jpg" alt="faq-thumb">
 						</div>
 					</div>
 				</div>

@@ -23,6 +23,8 @@ class LotteryTicketOrderController extends Controller
     public function register(Request $request)
     {
 
+
+
         //  $pdf = PDF::loadView('pdf.ticket', [
         //     'name' => 'name',
         //     'lottery_code' => 'lottery code',
@@ -99,5 +101,29 @@ class LotteryTicketOrderController extends Controller
         
 
         return redirect('/success');
+    }
+
+    public function registerx(Request $request)
+    {
+        # code...
+
+         $pdf = PDF::loadView('pdf.ticket', [
+            'name' => 'name',
+            'lottery_code' => 'lottery code',
+            'logo_url' => config('app.url').'images/reliance_logo.png',
+        ])->setPaper('a4', 'landscape')->setOptions([
+            'defaultFont' => 'sans-serif',
+            'isHtml5ParserEnabled' => true,
+            'isRemoteEnabled' => true
+        
+        ]);
+
+      
+
+        $file_name = rand(123, 1233);
+            
+        return $file = Storage::put('public/receipts/'.$file_name.'.pdf', $pdf->output());
+
+     
     }
 }
