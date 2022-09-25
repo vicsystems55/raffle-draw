@@ -150,7 +150,7 @@ u + #body a {color:inherit;text-decoration:none;font-size:inherit;font-family:in
   </tr>
   <tr data-element="black-logo" data-label="Logo">
     <td align="center">
-      <img style="width:189px;border:0px;display: inline!important;" src="reliance_logo2.jpeg" width="189" border="0" editable="true" data-icon data-image-edit data-url data-label="Logo" data-image-width alt="logo">
+      <img style="width:189px;border:0px;display: inline!important;" src="{{public_path('/images/reliance_logo2.jpeg')}}" width="189" border="0" editable="true" data-icon data-image-edit data-url data-label="Logo" data-image-width alt="logo">
     </td>
   </tr>
   <tr>
@@ -169,6 +169,8 @@ u + #body a {color:inherit;text-decoration:none;font-size:inherit;font-family:in
         <singleline>
           <div mc:edit data-text-edit>
             Hi, {{$name}}</div>
+
+            {{public_path('/images/reliance_logo2.jpeg')}}
           
         </singleline>
     </td>
