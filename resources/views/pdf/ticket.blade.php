@@ -150,7 +150,7 @@ u + #body a {color:inherit;text-decoration:none;font-size:inherit;font-family:in
   </tr>
   <tr data-element="black-logo" data-label="Logo">
     <td align="center">
-      <img style="width:189px;border:0px;display: inline!important;" src="{{public_path('reliance_logo2.jpeg')}}" width="189" border="0" editable="true" data-icon data-image-edit data-url data-label="Logo" data-image-width alt="logo">
+      <img style="width:189px;border:0px;display: inline!important;" src="data:image/png;base64,{{ base64_encode(file_get_contents(public_path('reliance_logo2.jpeg'))) }} width="189" border="0" editable="true" data-icon data-image-edit data-url data-label="Logo" data-image-width alt="logo">
     </td>
   </tr>
   <tr>
@@ -182,8 +182,7 @@ u + #body a {color:inherit;text-decoration:none;font-size:inherit;font-family:in
     <td data-text-style="Intro Paragraph" align="center" style="font-family:'Roboto',Arial,Helvetica,sans-serif;font-size:18px;line-height:32px;font-weight:400;font-style:normal;color:#FFFFFF;text-decoration:none;letter-spacing:0px;">
         <singleline>
           <div mc:edit data-text-edit>
-            <img src="data:image/png;base64,{{ base64_encode(file_get_contents(public_path('reliance_logo2.jpeg'))) }}">
-            {{config('app.url').'reliance_logo2.jpeg'}} 
+              BIG WINS AHEAD
           </div>
         </singleline>
     </td>
@@ -206,7 +205,7 @@ u + #body a {color:inherit;text-decoration:none;font-size:inherit;font-family:in
                 <td class="center-text" data-text-style="Use Code" align="center" style="font-family:'Roboto Slab',Arial,Helvetica,sans-serif;font-size:32px;line-height:36px;font-weight:400;font-style:normal;color:#999999;text-decoration:none;letter-spacing:0px;">
                     <singleline>
                       <div mc:edit data-text-edit>
-                        User Code: <span style="color:#FFFFFF;">{{$lottery_code}}</span>
+                        Ticket Code: <span style="color:#FFFFFF;">{{$lottery_code}}</span>
                       </div>
                     </singleline>
                 </td>
