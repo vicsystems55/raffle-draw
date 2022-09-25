@@ -27,7 +27,14 @@ class LotteryTicketOrderController extends Controller
             'name' => 'name',
             'lottery_code' => 'lottery code',
             'logo_url' => config('app.url').'images/reliance_logo.png',
-        ])->setPaper('a4', 'landscape')->setOptions(['defaultFont' => 'sans-serif']);
+        ])->setPaper('a4', 'landscape')->setOptions([
+            'defaultFont' => 'sans-serif',
+            'isHtml5ParserEnabled' => true,
+            'isRemoteEnabled' => true
+        
+        ]);
+
+      
 
         $file_name = rand(123, 1233);
             

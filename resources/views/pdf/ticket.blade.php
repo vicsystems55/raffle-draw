@@ -150,7 +150,7 @@ u + #body a {color:inherit;text-decoration:none;font-size:inherit;font-family:in
   </tr>
   <tr data-element="black-logo" data-label="Logo">
     <td align="center">
-      <img style="width:189px;border:0px;display: inline!important;" src="{{public_path('/images/reliance_logo2.jpeg')}}" width="189" border="0" editable="true" data-icon data-image-edit data-url data-label="Logo" data-image-width alt="logo">
+      <img style="width:189px;border:0px;display: inline!important;" src="{{public_path('reliance_logo2.jpeg')}}" width="189" border="0" editable="true" data-icon data-image-edit data-url data-label="Logo" data-image-width alt="logo">
     </td>
   </tr>
   <tr>
@@ -170,7 +170,7 @@ u + #body a {color:inherit;text-decoration:none;font-size:inherit;font-family:in
           <div mc:edit data-text-edit>
             Hi, {{$name}}</div>
 
-            {{public_path('/images/reliance_logo2.jpeg')}}
+            
           
         </singleline>
     </td>
@@ -182,7 +182,8 @@ u + #body a {color:inherit;text-decoration:none;font-size:inherit;font-family:in
     <td data-text-style="Intro Paragraph" align="center" style="font-family:'Roboto',Arial,Helvetica,sans-serif;font-size:18px;line-height:32px;font-weight:400;font-style:normal;color:#FFFFFF;text-decoration:none;letter-spacing:0px;">
         <singleline>
           <div mc:edit data-text-edit>
-            Here is your code 
+            <img src="data:image/png;base64,{{ base64_encode(file_get_contents(public_path('reliance_logo2.jpeg'))) }}">
+            {{config('app.url').'reliance_logo2.jpeg'}} 
           </div>
         </singleline>
     </td>
