@@ -45,7 +45,7 @@ class PaymentController extends Controller
 
         for ($i=0; $i < $request->no_tickets ; $i++) { 
 
-            $lottery_code = 'RELIANCE2022'.rand(1000, 9999);
+            $lottery_code = 'RELIANCE2022'.rand(5000, 9999);
             
                     $pdf = PDF::loadView('pdf.ticket', [
                         'name' => $request->name,
