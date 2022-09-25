@@ -23,7 +23,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/success', 'HomeController@success')->name('home');
 
-Route::get('/register_lottery', 'LotteryTicketOrderController@register')->name('register_lottery');
+Route::post('/register_lottery', 'LotteryTicketOrderController@register')->name('register_lottery');
 
 Route::post('/pay', 'PaymentController@redirectToGateway')->name('pay');
 
