@@ -51,7 +51,7 @@ class PaymentController extends Controller
                         'name' => $request->name,
                         'lottery_code' => $lottery_code,
                         'logo_url' => config('app.url').'images/reliance_logo.png',
-                    ])->setPaper('a4', 'landscape')->setOptions(['defaultFont' => 'sans-serif']);
+                    ])->setPaper('a6', 'landscape')->setOptions(['defaultFont' => 'sans-serif']);
             
                     $file_name = rand(123, 1233);
             
@@ -86,7 +86,7 @@ class PaymentController extends Controller
         
         
 
-        return redirect('/success');
+        return redirect('/success?email='.$request->email);
         // Now you have the payment details,
         // you can store the authorization_code in your db to allow for recurrent subscriptions
         // you can then redirect or do whatever you want

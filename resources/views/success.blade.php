@@ -146,11 +146,11 @@
 			<div class="section-wrapper">
 				<div class="zero-item">
 					<div class="zero-thumb">
-						<img src="assets/images/404.png" alt="404">
+						<iframe src="https://embed.lottiefiles.com/animation/57490"></iframe>
 					</div>
 					<div class="zero-content">
 						<h2>You have successfully purchased your ticket.</h2>
-						<p>Details have been sent to your email.</p>
+						<p>Details have been sent to your email. {{$_GET['email']}}</p>
 						<a href="/" class="default-button reverse-effect"><span>Go Back to Home <i  class="icofont-double-right"></i></span> </a>
 					</div>
 				</div>
