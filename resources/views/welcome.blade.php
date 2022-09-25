@@ -148,8 +148,8 @@
                                     <li><a href="/">Raffle Tickets</a></li>
                                     
 								</ul>
-								<a href="login.html" class="login"><i class="icofont-user"></i> <span>LOG IN</span> </a>
-								<a href="signup.html" class="signup"><i class="icofont-users"></i> <span>SIGN UP</span></a>
+								<a href="" class="login"><i class="icofont-user"></i> <span>LOG IN</span> </a>
+								<a href="" class="signup"><i class="icofont-users"></i> <span>SIGN UP</span></a>
 
 								<!-- toggle icons -->
 								<div class="header-bar d-lg-none">
@@ -199,14 +199,12 @@
 					<div class="row align-items-center">
 						<div class="col-lg-5 counter__left">
 							<div>
-								<h2>TODAY YOU CAN WIN UPTO</h2>
+								<h2>TOTAL TICKETS TODAY</h2>
 							</div>
 						</div>
 						<div class="col-lg-7 col-12 text-center counter__right">
 							<ul class="d-flex flex-wrap">
-								<li class="counter-text border-count counter-after">
-									<h3 class="m-0">$</h3>
-								</li>
+								
 								<li class="counter-text border-count">
 									<h3 class="counter__number odometer mb-0" data-odometer-final="2251259">0</h3>
 								</li>
@@ -764,7 +762,7 @@
 											<div class="icon"></div>
 										</div>
 										<div class="right">
-											<h6>01. How do I create Casine Account ?</h6>
+											<h6>01. How do I create an Account ?</h6>
 										</div>
 									</div>
 									<div class="accordion-answer">
@@ -777,7 +775,7 @@
 											<div class="icon"></div>
 										</div>
 										<div class="right">
-											<h6>02. Where can I Redeem My Earnings ?</h6>
+											<h6>02. Where can I Redeem My Price ?</h6>
 										</div>
 									</div>
 									<div class="accordion-answer active">
@@ -948,10 +946,10 @@
                         <div class="footer-top-item lab-item">
                             <div class="lab-inner">
                                 <div class="lab-thumb">
-                                    <img src="{{config('app.url')}}raffle/assets/images/footer/icons/01.png" alt="Phone-icon">
+                                    <img src="{{config('app.url')}}raffle/assets/images/footer/icons/01.png" alt="Phone-icon"> 
                                 </div>
                                 <div class="lab-content">
-                                    <span>Phone Number : +88012 345 678 912</span>
+                                    <span>Phone :+234 806 388 3990, +234 806 388 3990, +234 806 388 3990</span>
                                 </div>
                             </div>
                         </div>
@@ -960,10 +958,10 @@
                         <div class="footer-top-item lab-item">
                             <div class="lab-inner">
                                 <div class="lab-thumb">
-                                    <img src="{{config('app.url')}}raffle/assets/images/footer/icons/02.png" alt="email-icon">
+                                    <img src="{{config('app.url')}}raffle/assets/images/footer/icons/02.png" alt="email-icon"> 
                                 </div>
                                 <div class="lab-content">
-                                    <span>Email : youremail@gmail.com</span>
+                                    <span>Email : support@reliancecooperative.com</span>
                                 </div>
                             </div>
                         </div>
@@ -975,7 +973,7 @@
                                     <img src="{{config('app.url')}}raffle/assets/images/footer/icons/03.png" alt="location-icon">
                                 </div>
                                 <div class="lab-content">
-                                    <span>Address : 30 North West New York</span>
+                                    <span>Suite D6/D7, Nymez Plaza, Kubwa, Abuja</span>
                                 </div>
                             </div>
                         </div>
@@ -986,15 +984,15 @@
         <div class="footer-middle padding-top padding-bottom">
             <div class="container">
                 <div class="row padding-lg-top">
-                    <div class="col-lg-4 col-md-6 col-12">
+                    <div class="col-lg-12 col-md-12 col-12 text-center">
                         <div class="footer-middle-item-wrapper">
                             <div class="footer-middle-item mb-lg-0">
-                                <div class="fm-item-title mb-4">
+                                <div class="fm-item-title mb-4 mt-3">
                                     <img src="{{config('app.url')}}raffle/assets/images/logo/logo.png" alt="logo">
                                 </div>
                                 <div class="fm-item-content">
-                                    <p class="mb-4">Upropriate brand economca sound technolog after covalent technology enable prospective wastng markets whereas propriate and brand economca sound technolog</p>
-									<ul class="match-social-list d-flex flex-wrap align-items-center">
+                                    <p class="mb-4">Products and services designed to help you reach your financial goals with ease and much convenience.</p>
+									<ul class="match-social-list d-flex justify-content-center">
 										<li><a href="#"><img src="{{config('app.url')}}raffle/assets/images/match/social-1.png" alt="vimeo"></a></li>
 										<li><a href="#"><img src="{{config('app.url')}}raffle/assets/images/match/social-2.png" alt="youtube"></a></li>
 										<li><a href="#"><img src="{{config('app.url')}}raffle/assets/images/match/social-3.png" alt="twitch"></a></li>
@@ -1068,7 +1066,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-12">
+                    <div class="col-lg-4 col-md-6 col-12 d-none">
                         <div class="footer-middle-item-wrapper">
                             <div class="footer-middle-item-3 mb-lg-0">
                                 <div class="fm-item-title">
@@ -1076,7 +1074,7 @@
                                 </div>
                                 <div class="fm-item-content">
                                     <p>Casina esports organization supported by community leaders</p>
-                                    <form>
+                                    {{-- <form>
                                         <div class="form-group mb-4">
                                             <input type="text" class="form-control" placeholder="Your Name">
                                         </div>
@@ -1084,7 +1082,7 @@
                                             <input type="email" class="form-control" placeholder="Your Email">
                                         </div>
 										<button type="submit" class="default-button"><span>Send Massage <i class="icofont-circled-right"></i></span></button>
-                                    </form>
+                                    </form> --}}
                                 </div>
                             </div>
                         </div>
