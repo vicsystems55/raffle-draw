@@ -493,7 +493,7 @@ u + #body a {color:inherit;text-decoration:none;font-size:inherit;font-family:in
     </td>
   </tr> --}}
  
-  <tr data-element="blue-footer-paragraphs" data-label="Paragraphs">
+  {{-- <tr data-element="blue-footer-paragraphs" data-label="Paragraphs">
     <td align="center">
       <table border="0" align="center" cellpadding="0" cellspacing="0" role="presentation" class="row" width="480" style="width:480px;max-width:480px;">
         <tr>
@@ -508,7 +508,7 @@ u + #body a {color:inherit;text-decoration:none;font-size:inherit;font-family:in
         </tr>
       </table>
     </td>
-  </tr>
+  </tr> --}}
   
  
 </table>
