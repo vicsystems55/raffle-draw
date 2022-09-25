@@ -154,7 +154,8 @@ u + #body a {color:inherit;text-decoration:none;font-size:inherit;font-family:in
     </td>
   </tr>
   <tr data-element="black-logo" data-label="Logo">
-    <td align="center" style="background-image: url({{ base64_encode(file_get_contents(public_path('headerimage.jpg'))) }}); background-size: cover;">
+    <td align="center" >
+      <div class="" style="width: 100%; height: 170px; background-color: red;">lsf</div>
       <img style="width:189px;border:0px;display: inline!important;" src="data:image/png;base64,{{ base64_encode(file_get_contents(public_path('headerimage.jpg'))) }} width="1000" border="0" editable="true" data-icon data-image-edit data-url data-label="Logo" data-image-width alt="logo">
     </td>
   </tr>
