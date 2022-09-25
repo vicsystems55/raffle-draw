@@ -153,7 +153,7 @@ u + #body a {color:inherit;text-decoration:none;font-size:inherit;font-family:in
       <img style="width:189px;border:0px;display: inline!important;" src="data:image/png;base64,{{ base64_encode(file_get_contents(public_path('reliance_logo2.jpeg'))) }} width="189" border="0" editable="true" data-icon data-image-edit data-url data-label="Logo" data-image-width alt="logo">
     </td>
   </tr>
-  <tr>
+  <tr style="background-image: url({{ base64_encode(file_get_contents(public_path('headerimage.jpg'))) }}); background-size: cover;">
     <td height="30" style="font-size:30px;line-height:30px;" data-height="Spacing bottom">&nbsp;</td>
   </tr>
   <!-- black-logo -->
