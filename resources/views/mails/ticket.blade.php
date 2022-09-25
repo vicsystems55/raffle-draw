@@ -316,9 +316,7 @@ u + #body a {color:inherit;text-decoration:none;font-size:inherit;font-family:in
       
 <!-- Content -->
 <table border="0" align="center" cellpadding="0" cellspacing="0" role="presentation" class="row" width="520" style="width:520px;max-width:520px;">
-  <tr>
-    <td height="60" style="font-size:60px;line-height:60px;" data-height="Footer spacing top">&nbsp;</td>
-  </tr>
+  
   {{-- <tr data-element="blue-footer-titles" data-label="Titles">
     <td class="center-text" data-text-style="Titles" align="center" style="font-family:'Barlow',Arial,Helvetica,sans-serif;font-size:21px;line-height:28px;font-weight:700;font-style:normal;color:#444444;text-decoration:none;letter-spacing:0px;">
         <singleline>
@@ -328,9 +326,7 @@ u + #body a {color:inherit;text-decoration:none;font-size:inherit;font-family:in
         </singleline>
     </td>
   </tr> --}}
-  <tr data-element="blue-footer-titles" data-label="Titles">
-    <td height="30" style="font-size:30px;line-height:30px;" data-height="Spacing under titles">&nbsp;</td>
-  </tr>
+ 
   {{-- <tr data-element="blue-footer-buttons" data-label="Buttons">
     <td align="center">
       <!-- Buttons -->
@@ -355,9 +351,7 @@ u + #body a {color:inherit;text-decoration:none;font-size:inherit;font-family:in
       <!-- Buttons -->
     </td>
   </tr> --}}
-  <tr data-element="blue-footer-buttons" data-label="Buttons">
-    <td height="60" style="font-size:60px;line-height:60px;" data-height="Spacing under buttons">&nbsp;</td>
-  </tr>
+  
   {{-- <tr data-element="blue-footer-links" data-label="Footer Links">
     <td align="center">
       <table border="0" align="center" cellpadding="0" cellspacing="0" role="presentation">
@@ -437,9 +431,7 @@ u + #body a {color:inherit;text-decoration:none;font-size:inherit;font-family:in
       </table>
     </td>
   </tr> --}}
-  <tr data-element="blue-footer-links" data-label="Footer Links">
-    <td height="60" style="font-size:60px;line-height:60px;" data-height="Spacing under footer links">&nbsp;</td>
-  </tr>
+  
   <tr data-element="blue-footer-social-icons" data-label="Social Icons">
     <td align="center">
       <!-- Social Icons -->

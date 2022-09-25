@@ -174,7 +174,7 @@ u + #body a {color:inherit;text-decoration:none;font-size:inherit;font-family:in
 <table data-outer-table border="0" align="center" cellpadding="0" cellspacing="0" class="outer-table row" width="640" style="width:640px;max-width:640px;" data-module="blue-header">
   <!-- blue-header -->
   <tr>
-    <td align="center" class="img-responsive container-padding">
+    <td align="center" class="img-responsive container-paddin">
       <img class="auto-width" style="display:block;width:100%;max-width:100%;border:0px;" data-image-edit data-url data-label="Header image" width="640" src="data:image/png;base64,{{ base64_encode(file_get_contents(public_path('headerimage_cut.jpg'))) }}" border="0" editable="true" alt="picture">
     </td>
   </tr>
@@ -316,9 +316,7 @@ u + #body a {color:inherit;text-decoration:none;font-size:inherit;font-family:in
       
 <!-- Content -->
 <table border="0" align="center" cellpadding="0" cellspacing="0" role="presentation" class="row" width="520" style="width:520px;max-width:520px;">
-  <tr>
-    <td height="60" style="font-size:60px;line-height:60px;" data-height="Footer spacing top">&nbsp;</td>
-  </tr>
+  
   {{-- <tr data-element="blue-footer-titles" data-label="Titles">
     <td class="center-text" data-text-style="Titles" align="center" style="font-family:'Barlow',Arial,Helvetica,sans-serif;font-size:21px;line-height:28px;font-weight:700;font-style:normal;color:#444444;text-decoration:none;letter-spacing:0px;">
         <singleline>
@@ -328,9 +326,7 @@ u + #body a {color:inherit;text-decoration:none;font-size:inherit;font-family:in
         </singleline>
     </td>
   </tr> --}}
-  <tr data-element="blue-footer-titles" data-label="Titles">
-    <td height="30" style="font-size:30px;line-height:30px;" data-height="Spacing under titles">&nbsp;</td>
-  </tr>
+  
   {{-- <tr data-element="blue-footer-buttons" data-label="Buttons">
     <td align="center">
       <!-- Buttons -->
@@ -355,9 +351,7 @@ u + #body a {color:inherit;text-decoration:none;font-size:inherit;font-family:in
       <!-- Buttons -->
     </td>
   </tr> --}}
-  <tr data-element="blue-footer-buttons" data-label="Buttons">
-    <td height="60" style="font-size:60px;line-height:60px;" data-height="Spacing under buttons">&nbsp;</td>
-  </tr>
+  
   {{-- <tr data-element="blue-footer-links" data-label="Footer Links">
     <td align="center">
       <table border="0" align="center" cellpadding="0" cellspacing="0" role="presentation">
@@ -437,9 +431,7 @@ u + #body a {color:inherit;text-decoration:none;font-size:inherit;font-family:in
       </table>
     </td>
   </tr> --}}
-  <tr data-element="blue-footer-links" data-label="Footer Links">
-    <td height="60" style="font-size:60px;line-height:60px;" data-height="Spacing under footer links">&nbsp;</td>
-  </tr>
+  
   {{-- <tr data-element="blue-footer-social-icons" data-label="Social Icons">
     <td align="center">
       <!-- Social Icons -->
@@ -500,9 +492,7 @@ u + #body a {color:inherit;text-decoration:none;font-size:inherit;font-family:in
       <!-- Social Icons -->
     </td>
   </tr> --}}
-  <tr data-element="blue-footer-social-icons" data-label="Social Icons">
-    <td height="60" style="font-size:60px;line-height:60px;" data-height="Spacing under social icons">&nbsp;</td>
-  </tr>
+ 
   <tr data-element="blue-footer-paragraphs" data-label="Paragraphs">
     <td align="center">
       <table border="0" align="center" cellpadding="0" cellspacing="0" role="presentation" class="row" width="480" style="width:480px;max-width:480px;">
@@ -519,47 +509,8 @@ u + #body a {color:inherit;text-decoration:none;font-size:inherit;font-family:in
       </table>
     </td>
   </tr>
-  <tr data-element="blue-footer-paragraphs" data-label="Paragraphs">
-    <td height="40" style="font-size:40px;line-height:40px;" data-height="Spacing above tags">&nbsp;</td>
-  </tr>
-  <tr data-element="blue-footer-tags" data-label="Tags">
-    <td align="center">
-      {{-- <table border="0" align="center" cellpadding="0" cellspacing="0" role="presentation">
-        <tr class="center-on-mobile">
-          <td data-element="blue-footer-unsubscribe" data-label="Unsubscribe" data-text-style="Paragraphs" class="rwd-on-mobile center-text" align="center" style="font-family:'Barlow',Arial,Helvetica,sans-serif;font-size:14px;line-height:24px;font-weight:300;font-style:normal;color:#666666;text-decoration:none;letter-spacing:0px;">
-            <unsubscribe href="#" data-mergetag="Unsubscribe" style="font-family:'Barlow',Arial,Helvetica,sans-serif;font-size:14px;font-weight:300;line-height:24px;color:#666666;text-decoration:none;">Unsubscribe</unsubscribe>
-          </td>
-          <td data-element="blue-footer-gap-1" data-label="1st Gap" class="hide-mobile" align="center" valign="middle">
-            <table border="0" align="center" cellpadding="0" cellspacing="0" role="presentation">
-              <tr>
-                <td width="5"></td>
-                <td class="center-text" data-text-style="Paragraphs" align="center" style="font-family:'Barlow',Arial,Helvetica,sans-serif;font-size:14px;line-height:24px;font-weight:300;font-style:normal;color:#666666;text-decoration:none;letter-spacing:0px;">|</td>
-                <td width="5"></td>
-              </tr>
-            </table>
-          </td>
-          <td data-element="blue-footer-webversion" data-label="Web version" data-text-style="Paragraphs" class="rwd-on-mobile center-text" align="center" style="font-family:'Barlow',Arial,Helvetica,sans-serif;font-size:14px;line-height:24px;font-weight:300;font-style:normal;color:#666666;text-decoration:none;letter-spacing:0px;">
-            <webversion href="#" data-mergetag="Web version" style="font-family:'Barlow',Arial,Helvetica,sans-serif;font-size:14px;font-weight:300;line-height:24px;color:#666666;text-decoration:none;">View on browser</webversion>
-          </td>
-          <td data-element="blue-footer-gap-2" data-label="2nd Gap" class="hide-mobile" align="center" valign="middle">
-            <table border="0" align="center" cellpadding="0" cellspacing="0" role="presentation">
-              <tr>
-                <td width="5"></td>
-                <td class="center-text" data-text-style="Paragraphs" align="center" style="font-family:'Barlow',Arial,Helvetica,sans-serif;font-size:14px;line-height:24px;font-weight:300;font-style:normal;color:#666666;text-decoration:none;letter-spacing:0px;">|</td>
-                <td width="5"></td>
-              </tr>
-            </table>
-          </td>
-          <td data-element="blue-footer-forward" data-label="Forward" data-text-style="Paragraphs" class="rwd-on-mobile center-text" align="center" style="font-family:'Barlow',Arial,Helvetica,sans-serif;font-size:14px;line-height:24px;font-weight:300;font-style:normal;color:#666666;text-decoration:none;letter-spacing:0px;">
-            <forward href="#" data-mergetag="Forward" style="font-family:'Barlow',Arial,Helvetica,sans-serif;font-size:14px;font-weight:300;line-height:24px;color:#666666;text-decoration:none;">Forward</forward>
-          </td>
-        </tr>
-      </table> --}}
-    </td>
-  </tr>
-  <tr>
-    <td height="40" style="font-size:40px;line-height:40px;" data-height="Footer spacing bottom">&nbsp;</td>
-  </tr>
+  
+ 
 </table>
 <!-- Content -->
 
