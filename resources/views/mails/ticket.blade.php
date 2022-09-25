@@ -21,8 +21,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800;900&family=Rubik:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
 <style type="text/css">
 /*Basics*/
@@ -37,14 +36,18 @@ td a {text-decoration:none; color: inherit;}
 .ExternalClass {width: 100%;}
 .ExternalClass,.ExternalClass p,.ExternalClass span,.ExternalClass font,.ExternalClass td,.ExternalClass div {line-height:inherit;}
 .ReadMsgBody {width:100%; background-color: #ffffff;}
-/* iOS black LINKS */
+/* iOS BLUE LINKS */
 a[x-apple-data-detectors] {color:inherit !important; text-decoration:none !important; font-size:inherit !important; font-family:inherit !important; font-weight:inherit !important; line-height:inherit !important;} 
-/*Gmail black links*/
+/*Gmail blue links*/
 u + #body a {color:inherit;text-decoration:none;font-size:inherit;font-family:inherit;font-weight:inherit;line-height:inherit;}
 /*Buttons fix*/
 .undoreset a, .undoreset a:hover {text-decoration:none !important;}
 .yshortcuts a {border-bottom:none !important;}
 .ios-footer a {color:#aaaaaa !important;text-decoration:none;}
+/* data-outer-table="800 - 600" */
+.outer-table {width:640px!important;max-width:640px!important;}
+/* data-inner-table="780 - 540" */
+.inner-table {width:580px!important;max-width:580px!important;}
 /*Responsive-Tablet*/
 @media only screen and (max-width: 799px) and (min-width: 601px) {
   .outer-table.row {width:640px!important;max-width:640px!important;}
@@ -86,7 +89,6 @@ u + #body a {color:inherit;text-decoration:none;font-size:inherit;font-family:in
   .rwd-on-mobile {display: inline-block!important;padding: 5px!important;}
   .center-on-mobile {text-align: center!important;}
   .rwd-col {width:100%!important;max-width:100%!important;display:inline-block!important;}
-  .type48 {font-size:48px!important;line-height:58px!important;}
 }
 </style>
 <style type="text/css" class="export-delete"> 
@@ -124,11 +126,10 @@ u + #body a {color:inherit;text-decoration:none;font-size:inherit;font-family:in
   .composer--mobile .rwd-on-mobile {display: inline-block!important;padding: 5px!important;}
   .composer--mobile .center-on-mobile {text-align: center!important;}
   .composer--mobile .rwd-col {width:100%!important;max-width:100%!important;display:inline-block!important;}
-  .composer--mobile .type48 {font-size:48px!important;line-height:58px!important;}
 </style>
 </head>
 
-<body data-bgcolor="Body" style="margin-top: 0; margin-bottom: 0; padding-top: 0; padding-bottom: 0; width: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;" bgcolor="#000000">
+<body data-bgcolor="Body" style="margin-top: 0; margin-bottom: 0; padding-top: 0; padding-bottom: 0; width: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;" bgcolor="#FFFFFF">
 
 <span class="preheader-text" data-preheader-text style="color: transparent; height: 0; max-height: 0; max-width: 0; opacity: 0; overflow: hidden; visibility: hidden; width: 0; display: none; mso-hide: all;"></span>
 
@@ -137,384 +138,193 @@ u + #body a {color:inherit;text-decoration:none;font-size:inherit;font-family:in
 &zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;
 </div>
 
-<div data-primary-font="Roboto Slab" data-secondary-font="Roboto" style="display:none; font-size:0px; line-height:0px; max-height:0px; max-width:0px; opacity:0; overflow:hidden; visibility:hidden; mso-hide:all;"></div>
+<div data-primary-font="Barlow" data-secondary-font="Rubik" style="display:none; font-size:0px; line-height:0px; max-height:0px; max-width:0px; opacity:0; overflow:hidden; visibility:hidden; mso-hide:all;"></div>
 
 <table border="0" align="center" cellpadding="0" cellspacing="0" width="100%" style="width:100%;max-width:100%;">
   <tr><!-- Outer Table -->
-    <td align="center" data-bgcolor="Body" bgcolor="#000000" class="container-padding" data-composer>
+    <td align="center" data-bgcolor="Body" bgcolor="#FFFFFF" data-composer>
 
-<table data-outer-table border="0" align="center" cellpadding="0" cellspacing="0" class="outer-table row" role="presentation" width="580" style="width:580px;max-width:580px;" data-module="black-logo">
-  <!-- black-logo -->
+
+<table data-outer-table border="0" align="center" cellpadding="0" cellspacing="0" class="outer-table row" role="presentation" width="640" style="width:640px;max-width:640px;" data-module="blue-logo">
+  <!-- blue-logo -->
   <tr>
-    <td height="60" style="font-size:60px;line-height:60px;" data-height="Spacing top">&nbsp;</td>
+    <td align="center" bgcolor="#FFFFFF" data-bgcolor="BgColor" class="container-padding">
+
+<!-- Content -->
+<table border="0" align="center" cellpadding="0" cellspacing="0" role="presentation" width="100%" style="width:100%;max-width:100%;">
+  <tr>
+    <td height="20" style="font-size:20px;line-height:20px;" data-height="Spacing top">&nbsp;</td>
   </tr>
-  <tr data-element="black-logo" data-label="Logo">
-    <td align="center">
-      <img style="width:189px;border:0px;display: inline!important;" src="{{config('app.url')}}images/reliance_logo.png" width="189" border="0" editable="true" data-icon data-image-edit data-url data-label="Logo" data-image-width alt="logo">
+  <tr data-element="blue-logo" data-label="Logo">
+    <td align="center" class="center-text">
+      <img style="width:120px;border:0px;display: inline!important;" src="{{config('app.url')}}images/reliance_logo.png" width="120" border="0" editable="true" data-icon data-image-edit data-url data-label="Logo" data-image-width alt="logo">
     </td>
   </tr>
   <tr>
-    <td height="30" style="font-size:30px;line-height:30px;" data-height="Spacing bottom">&nbsp;</td>
+    <td height="20" style="font-size:20px;line-height:20px;" data-height="Spacing bottom">&nbsp;</td>
   </tr>
-  <!-- black-logo -->
+</table>
+<!-- Content -->
+
+    </td>
+  </tr>
+  <!-- blue-logo -->
 </table>
 
-<table data-outer-table border="0" align="center" cellpadding="0" cellspacing="0" class="outer-table row" role="presentation" width="580" style="width:580px;max-width:580px;" data-module="black-intro-5">
-  <!-- black-intro-5 -->
+<table data-outer-table border="0" align="center" cellpadding="0" cellspacing="0" class="outer-table row" width="640" style="width:640px;max-width:640px;" data-module="blue-header">
+  <!-- blue-header -->
   <tr>
-    <td height="30" style="font-size:30px;line-height:30px;" data-height="Spacing top">&nbsp;</td>
-  </tr>
-  <tr data-element="black-intro-5-headline" data-label="Intro Headline">
-    <td class="type48" data-text-style="Intro Headline" align="center" style="font-family:'Roboto Slab',Arial,Helvetica,sans-serif;font-size:64px;line-height:84px;font-weight:700;font-style:normal;color:#FFFFFF;text-decoration:none;letter-spacing:0px;">
-        <singleline>
-          <div mc:edit data-text-edit>
-            Hi, {{$data['name']}}
-          </div>
-        </singleline>
+    <td align="center" class="img-responsive container-padding">
+      <img class="auto-width" style="display:block;width:100%;max-width:100%;border:0px;" data-image-edit data-url data-label="Header image" width="640" src="{{config('app.url')}}images/headerimage.jpg" border="0" editable="true" alt="picture">
     </td>
   </tr>
-  <tr data-element="black-intro-5-headline" data-label="Intro Headline"> 
-    <td height="20" style="font-size:20px;line-height:20px;" data-height="Spacing under headline">&nbsp;</td>
-  </tr>
-  <tr data-element="black-intro-5-paragraph" data-label="Intro Paragraph">
-    <td data-text-style="Intro Paragraph" align="center" style="font-family:'Roboto',Arial,Helvetica,sans-serif;font-size:18px;line-height:32px;font-weight:400;font-style:normal;color:#FFFFFF;text-decoration:none;letter-spacing:0px;">
-        <singleline>
-          <div mc:edit data-text-edit>
-            Here are your raffle tickets.
-          </div>
-        </singleline>
-    </td>
-  </tr>
-  <tr data-element="black-intro-5-paragraph" data-label="Intro Paragraph">
-    <td height="40" style="font-size:40px;line-height:40px;" data-height="Spacing under paragraph">&nbsp;</td>
-  </tr>
-
-  @foreach ($data['data'] as $dat)
-    <tr data-element="black-intro-usercode" data-label="User Code">
-        <td align="center">
-        <!-- Use Code -->
-        <table border="0" cellspacing="0" cellpadding="0" role="presentation" align="center" class="row" width="580" style="width:580px;max-width:580px;">
-            <tr>
-            <td align="center" data-border-radius-default="0,6,36" data-border-radius-custom="User Code" data-bgcolor="User Code" bgcolor="#000000" style="border-radius: 10px;border: 3px dotted #FF0076;">
-                <!-- Content -->
-                <table border="0" cellspacing="0" cellpadding="0" role="presentation" align="center" class="row" width="580" style="width:580px;max-width:580px;">
-                <tr>
-                    <td height="26" style="font-size:26px;line-height:26px;">&nbsp;</td>
-                </tr>
-                <tr>
-                    <td class="center-text" data-text-style="Use Code" align="center" style="font-family:'Roboto Slab',Arial,Helvetica,sans-serif;font-size:32px;line-height:36px;font-weight:400;font-style:normal;color:#999999;text-decoration:none;letter-spacing:0px;">
-                        <singleline>
-                        <div mc:edit data-text-edit>
-                            User Code: <span style="color:#FFFFFF;">{{$dat['lottery_code']}}</span>
-                        </div>
-                        </singleline>
-                    </td>
-                </tr>
-                <tr>
-                    <td height="26" style="font-size:26px;line-height:26px;">&nbsp;</td>
-                </tr>
-                </table>
-                <!-- Content -->
-            </td>
-            </tr>
-        </table>
-        <!-- User Code -->
-        </td>
-    </tr>
-    <tr data-element="black-intro-usercode" data-label="User Code">
-        <td height="40" style="font-size:40px;line-height:40px;" data-height="Spacing under user code">&nbsp;</td>
-    </tr>
-    <tr data-element="black-intro-5-button" data-label="Intro Button">
-        <td align="center">
-        <!-- Button -->
-        <table border="0" cellspacing="0" cellpadding="0" role="presentation" align="center">
-            <tr>
-            <td align="center" data-border-radius-default="0,6,36" data-border-radius-custom="Intro Button" data-bgcolor="Intro Button" bgcolor="#FF0076" style="border-radius: 6px;">
-        <!--[if (gte mso 9)|(IE)]>
-            <table border="0" cellpadding="0" cellspacing="0" align="center">
-            <tr>
-                <td align="center" width="38"></td>
-                <td align="center" height="60" style="height:60px;">
-                <![endif]-->
-                <singleline>
-                    <a href="{{$dat['lottery_ticket_url']}}" mc:edit data-button data-text-style="Intro Button" style="font-family:'Roboto Slab',Arial,Helvetica,sans-serif;font-size:18px;line-height:28px;font-weight:700;font-style:normal;color:#FFFFFF;text-decoration:none;letter-spacing:0px;padding: 16px 38px 16px 38px;display: inline-block;"><span>DOWNLOAD TICKET</span></a>
-                </singleline>
-                <!--[if (gte mso 9)|(IE)]>
-                </td>
-                <td align="center" width="38"></td>
-            </tr>
-            </table>
-        <![endif]-->
-            </td>
-            </tr>
-        </table>
-        <!-- Buttons -->
-        </td>
-    </tr>
-    <tr>
-        <td height="30" style="font-size:30px;line-height:30px;" data-height="Spacing bottom">&nbsp;</td>
-      </tr>
-  @endforeach
-
-
-  {{-- <tr data-element="black-intro-usercode" data-label="User Code">
-    <td align="center">
-      <!-- Use Code -->
-      <table border="0" cellspacing="0" cellpadding="0" role="presentation" align="center" class="row" width="580" style="width:580px;max-width:580px;">
-        <tr>
-          <td align="center" data-border-radius-default="0,6,36" data-border-radius-custom="User Code" data-bgcolor="User Code" bgcolor="#000000" style="border-radius: 10px;border: 3px dotted #FF0076;">
-            <!-- Content -->
-            <table border="0" cellspacing="0" cellpadding="0" role="presentation" align="center" class="row" width="580" style="width:580px;max-width:580px;">
-              <tr>
-                <td height="26" style="font-size:26px;line-height:26px;">&nbsp;</td>
-              </tr>
-              <tr>
-                <td class="center-text" data-text-style="Use Code" align="center" style="font-family:'Roboto Slab',Arial,Helvetica,sans-serif;font-size:32px;line-height:36px;font-weight:400;font-style:normal;color:#999999;text-decoration:none;letter-spacing:0px;">
-                    <singleline>
-                      <div mc:edit data-text-edit>
-                        User Code: <span style="color:#FFFFFF;">Black#798436#</span>
-                      </div>
-                    </singleline>
-                </td>
-              </tr>
-              <tr>
-                <td height="26" style="font-size:26px;line-height:26px;">&nbsp;</td>
-              </tr>
-            </table>
-            <!-- Content -->
-          </td>
-        </tr>
-      </table>
-      <!-- User Code -->
-    </td>
-  </tr>
-  <tr data-element="black-intro-usercode" data-label="User Code">
-    <td height="40" style="font-size:40px;line-height:40px;" data-height="Spacing under user code">&nbsp;</td>
-  </tr>
-  <tr data-element="black-intro-5-button" data-label="Intro Button">
-    <td align="center">
-      <!-- Button -->
-      <table border="0" cellspacing="0" cellpadding="0" role="presentation" align="center">
-        <tr>
-          <td align="center" data-border-radius-default="0,6,36" data-border-radius-custom="Intro Button" data-bgcolor="Intro Button" bgcolor="#FF0076" style="border-radius: 6px;">
-      <!--[if (gte mso 9)|(IE)]>
-        <table border="0" cellpadding="0" cellspacing="0" align="center">
-          <tr>
-            <td align="center" width="38"></td>
-            <td align="center" height="60" style="height:60px;">
-            <![endif]-->
-              <singleline>
-                <a href="#" mc:edit data-button data-text-style="Intro Button" style="font-family:'Roboto Slab',Arial,Helvetica,sans-serif;font-size:18px;line-height:28px;font-weight:700;font-style:normal;color:#FFFFFF;text-decoration:none;letter-spacing:0px;padding: 16px 38px 16px 38px;display: inline-block;"><span>ACTIVATE CODE</span></a>
-              </singleline>
-            <!--[if (gte mso 9)|(IE)]>
-            </td>
-            <td align="center" width="38"></td>
-          </tr>
-        </table>
-      <![endif]-->
-          </td>
-        </tr>
-      </table>
-      <!-- Buttons -->
-    </td>
-  </tr> --}}
-
-
-  <tr>
-    <td height="30" style="font-size:30px;line-height:30px;" data-height="Spacing bottom">&nbsp;</td>
-  </tr>
-  <!-- black-intro-5 -->
+  <!-- blue-header -->
 </table>
 
-<table data-outer-table border="0" align="center" cellpadding="0" cellspacing="0" class="outer-table row" role="presentation" width="580" style="width:580px;max-width:580px;" data-module="black-splitter">
-  <!-- black-splitter -->
+<table data-outer-table border="0" align="center" cellpadding="0" cellspacing="0" class="outer-table row" role="presentation" width="640" style="width:640px;max-width:640px;" data-module="blue-preface-5">
+  <!-- blue-preface-5 -->
   <tr>
-    <td height="30" style="font-size:30px;line-height:30px;" data-height="Spacing top">&nbsp;</td>
-  </tr>
-  <tr>
-    <td align="center" height="8" data-border-color="dotted-dividers" style="font-size:8px;line-height:8px;border-top: 8px dotted #333333;">&nbsp;</td>
-  </tr>
-  <tr>
-    <td height="30" style="font-size:30px;line-height:30px;" data-height="Spacing bottom">&nbsp;</td>
-  </tr>
-  <!-- black-splitter -->
-</table>
+    <td align="center" bgcolor="#FFFFFF" data-bgcolor="BgColor" class="container-padding">
 
-<table border="0" align="center" cellpadding="0" cellspacing="0" role="presentation" class="row" width="580" style="width:580px;max-width:580px;" data-module="black-footer">
-  <!-- black-footer -->
+<table data-inner-table border="0" align="center" cellpadding="0" cellspacing="0" role="presentation" class="inner-table row" width="580" style="width:580px;max-width:580px;">
   <tr>
-    <td height="30" style="font-size:30px;line-height:30px;" data-height="Footer spacing top">&nbsp;</td>
+    <td height="40" style="font-size:40px;line-height:40px;" data-height="Spacing top">&nbsp;</td>
   </tr>
-  <tr data-element="black-footer-links" data-label="Footer Links">
-    <td align="center">
-      <table border="0" align="center" cellpadding="0" cellspacing="0" role="presentation">
-        <tr class="center-on-mobile">
-          <td data-element="black-footer-1st-link" data-label="1st Link" data-text-style="Footer Links" class="rwd-on-mobile center-text" align="center" style="font-family:'Roboto',Arial,Helvetica,sans-serif;font-size:14px;line-height:24px;font-weight:400;font-style:normal;color:#999999;text-decoration:none;letter-spacing:0px;">
-            <!-- Links -->
-              <singleline>
-                <a href="#" mc:edit data-button data-text-style="Footer Links" style="font-family:'Roboto',Arial,Helvetica,sans-serif;font-size:14px;line-height:28px;font-weight:400;font-style:normal;color:#999999;text-decoration:none;letter-spacing:0px;display:inline-block;vertical-align:middle;"><span>About Us</span></a> 
-              </singleline>
-            <!-- Links -->
-          </td>
-          <td data-element="black-footer-gap-1" data-label="1st Gap" class="hide-mobile" align="center" valign="middle">
-            <table border="0" align="center" cellpadding="0" cellspacing="0" role="presentation">
-              <tr>
-                <td width="10"></td>
-                <td class="center-text" data-text-style="Paragraphs" align="center" style="font-family:'Roboto',Arial,Helvetica,sans-serif;font-size:28px;line-height:28px;font-weight:100;font-style:normal;color:#444444;text-decoration:none;letter-spacing:0px;">|</td>
-                <td width="10"></td>
-              </tr>
-            </table>
-          </td>
-          <td data-element="black-footer-2nd-link" data-label="2nd Link" data-text-style="Footer Links" class="rwd-on-mobile center-text" align="center" style="font-family:'Roboto',Arial,Helvetica,sans-serif;font-size:14px;line-height:24px;font-weight:400;font-style:normal;color:#999999;text-decoration:none;letter-spacing:0px;">
-            <!-- Links -->
-              <singleline>
-                <a href="#" mc:edit data-button data-text-style="Footer Links" style="font-family:'Roboto',Arial,Helvetica,sans-serif;font-size:14px;line-height:28px;font-weight:400;font-style:normal;color:#999999;text-decoration:none;letter-spacing:0px;display:inline-block;vertical-align:middle;"><span>Help</span></a> 
-              </singleline>
-            <!-- Links -->
-          </td>
-          <td data-element="black-footer-gap-2" data-label="2nd Gap" class="hide-mobile" align="center" valign="middle">
-            <table border="0" align="center" cellpadding="0" cellspacing="0" role="presentation">
-              <tr>
-                <td width="10"></td>
-                <td class="center-text" data-text-style="Paragraphs" align="center" style="font-family:'Roboto',Arial,Helvetica,sans-serif;font-size:28px;line-height:28px;font-weight:100;font-style:normal;color:#444444;text-decoration:none;letter-spacing:0px;">|</td>
-                <td width="10"></td>
-              </tr>
-            </table>
-          </td>
-          <td data-element="black-footer-3rd-link" data-label="3rd Link" data-text-style="Footer Links" class="rwd-on-mobile center-text" align="center" style="font-family:'Roboto',Arial,Helvetica,sans-serif;font-size:14px;line-height:24px;font-weight:400;font-style:normal;color:#999999;text-decoration:none;letter-spacing:0px;">
-            <!-- Links -->
-              <singleline>
-                <a href="#" mc:edit data-button data-text-style="Footer Links" style="font-family:'Roboto',Arial,Helvetica,sans-serif;font-size:14px;line-height:28px;font-weight:400;font-style:normal;color:#999999;text-decoration:none;letter-spacing:0px;display:inline-block;vertical-align:middle;"><span>Privacy Policy</span></a> 
-              </singleline>
-            <!-- Links -->
-          </td>
-          <td data-element="black-footer-gap-3" data-label="3rd Gap" class="hide-mobile" align="center" valign="middle">
-            <table border="0" align="center" cellpadding="0" cellspacing="0" role="presentation">
-              <tr>
-                <td width="10"></td>
-                <td class="center-text" data-text-style="Paragraphs" align="center" style="font-family:'Roboto',Arial,Helvetica,sans-serif;font-size:28px;line-height:28px;font-weight:100;font-style:normal;color:#444444;text-decoration:none;letter-spacing:0px;">|</td>
-                <td width="10"></td>
-              </tr>
-            </table>
-          </td>
-          <td data-element="black-footer-4th-link" data-label="4th Link" data-text-style="Footer Links" class="rwd-on-mobile center-text" align="center" style="font-family:'Roboto',Arial,Helvetica,sans-serif;font-size:14px;line-height:24px;font-weight:400;font-style:normal;color:#999999;text-decoration:none;letter-spacing:0px;">
-            <!-- Links -->
-              <singleline>
-                <a href="#" mc:edit data-button data-text-style="Footer Links" style="font-family:'Roboto',Arial,Helvetica,sans-serif;font-size:14px;line-height:28px;font-weight:400;font-style:normal;color:#999999;text-decoration:none;letter-spacing:0px;display:inline-block;vertical-align:middle;"><span>Contact Us</span></a> 
-              </singleline>
-            <!-- Links -->
-          </td>
-        </tr>
-      </table>
-    </td>
-  </tr>
-  <tr data-element="black-footer-links" data-label="Footer Links">
-    <td height="40" style="font-size:40px;line-height:40px;" data-height="Spacing under footer links">&nbsp;</td>
-  </tr>
-  
-  <tr data-element="black-footer-social-icons" data-label="Social Icons">
-    <td align="center">
-      <!-- Social Icons -->
+  <tr>
+    <td align="center" data-bgcolor="BgColor" bgcolor="#FFFFFF">
+      <!-- content -->
       <table border="0" align="center" cellpadding="0" cellspacing="0" role="presentation" width="100%" style="width:100%;max-width:100%;">
-        <tr>
+        <tr data-element="blue-subline" data-label="Sublines">
+          <td class="center-text" data-text-style="Sublines" align="center" style="font-family:'Barlow',Arial,Helvetica,sans-serif;font-size:14px;line-height:24px;font-weight:900;font-style:normal;color:#50C0FF;text-decoration:none;letter-spacing:1px;">
+              <singleline>
+                <div mc:edit data-text-edit>
+                  YOU'RE ALMOST THERE
+                </div>
+              </singleline>
+          </td>
+        </tr>
+        <tr data-element="blue-headline" data-label="Headlines">
+          <td class="center-text" data-text-style="Headlines" align="center" style="font-family:'Barlow',Arial,Helvetica,sans-serif;font-size:48px;line-height:54px;font-weight:900;font-style:normal;color:#222222;text-decoration:none;letter-spacing:0px;">
+              <singleline>
+                <div mc:edit data-text-edit>
+                  ACTIVATE USING THE FOLLOWING CODE
+                </div>
+              </singleline>
+          </td>
+        </tr>
+        <tr data-element="blue-headline" data-label="Headlines">
+          <td height="15" style="font-size:15px;line-height:15px;" data-height="Spacing under headline">&nbsp;</td>
+        </tr>
+        <tr data-element="blue-paragraph" data-label="Paragraphs">
+          <td class="center-text" data-text-style="Paragraphs" align="center" style="font-family:'Barlow',Arial,Helvetica,sans-serif;font-size:16px;line-height:26px;font-weight:400;font-style:normal;color:#333333;text-decoration:none;letter-spacing:0px;">
+              <singleline>
+                <div mc:edit data-text-edit>
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi accus antium iste natus.
+                </div>
+              </singleline>
+          </td>
+        </tr>
+        <tr data-element="blue-header-paragraph" data-label="Paragraphs">
+          <td height="25" style="font-size:25px;line-height:25px;" data-height="Spacing under paragraph">&nbsp;</td>
+        </tr>
+        <tr data-element="blue-bm-usercode" data-label="User Code">
           <td align="center">
-            <table border="0" align="center" cellpadding="0" cellspacing="0" role="presentation">
-              <tr class="center-on-mobile">
-
-                <td data-element="black-footer-facebook" data-label="Facebook" class="rwd-on-mobile" align="center" valign="middle" height="28" style="height: 28px;">
-                  <table border="0" align="center" cellpadding="0" cellspacing="0" role="presentation">
+            <!-- Use Code -->
+            <table border="0" cellspacing="0" cellpadding="0" role="presentation" align="center" class="row" width="80%" style="width:80%;max-width:80%;">
+              <tr>
+                <td align="center" data-bgcolor="User Code" bgcolor="#F8F8F8" style="border-radius: 0px;">
+                  <!-- Content -->
+                  <table border="0" cellspacing="0" cellpadding="0" role="presentation" align="center" class="row" width="100%" style="width:100%;max-width:100%;">
                     <tr>
-                      <td align="center">
-                        <img style="width:28px;border:0px;display: inline!important;" src="images/facebook.png" width="28" border="0" editable="true" data-icon data-image-edit data-url data-label="Facebook" data-image-width alt="icon">
-                      </td>
-                      <td width="7"></td>
+                      <td height="20" style="font-size:20px;line-height:20px;">&nbsp;</td>
                     </tr>
-                  </table>
-                </td>
-
-                <td data-element="black-footer-twitter" data-label="Twitter" class="rwd-on-mobile" align="center" valign="middle" height="28" style="height: 28px;">
-                  <table border="0" align="center" cellpadding="0" cellspacing="0" role="presentation">
                     <tr>
-                      <td width="7"></td>
-                      <td align="center">
-                        <img style="width:28px;border:0px;display: inline!important;" src="images/twitter.png" width="28" border="0" editable="true" data-icon data-image-edit data-url data-label="Twitter" data-image-width alt="icon">
-                      </td>
-                      <td width="7"></td>
-                    </tr>
-                  </table>
-                </td>
-
-                <td data-element="black-footer-linkedin" data-label="Twitter" class="rwd-on-mobile" align="center" valign="middle" height="28" style="height: 28px;">
-                  <table border="0" align="center" cellpadding="0" cellspacing="0" role="presentation">
-                    <tr>
-                      <td width="7"></td>
-                      <td align="center">
-                        <img style="width:28px;border:0px;display: inline!important;" src="images/linkedin.png" width="28" border="0" editable="true" data-icon data-image-edit data-url data-label="Linkedin" data-image-width alt="icon">
-                      </td>
-                      <td width="7"></td>
-                    </tr>
-                  </table>
-                </td>
-
-                <td data-element="black-footer-pinterest" data-label="Twitter" class="rwd-on-mobile" align="center" valign="middle" height="28" style="height: 28px;">
-                  <table border="0" align="center" cellpadding="0" cellspacing="0" role="presentation">
-                    <tr>
-                      <td width="7"></td>
-                      <td align="center">
-                        <img style="width:28px;border:0px;display: inline!important;" src="images/pinterest.png" width="28" border="0" editable="true" data-icon data-image-edit data-url data-label="Pinterest" data-image-width alt="icon">
-                      </td>
-                      <td width="7"></td>
-                    </tr>
-                  </table>
-                </td>
-
-                <td data-element="black-footer-instagram" data-label="Instagram" class="rwd-on-mobile" align="center" valign="middle" height="28" style="height: 28px;">
-                  <table border="0" align="center" cellpadding="0" cellspacing="0" role="presentation">
-                    <tr>
-                      <td width="7"></td>
-                      <td align="center">
-                        <img style="width:28px;border:0px;display: inline!important;" src="images/instagram.png" width="28" border="0" editable="true" data-icon data-image-edit data-url data-label="Instagram" data-image-width alt="icon">
-                      </td>
-                      <td width="7"></td>
-                    </tr>
-                  </table>
-                </td>
-
-                <td data-element="black-footer-dribbble" data-label="Dribbble" class="rwd-on-mobile" align="center" valign="middle" height="28" style="height: 28px;">
-                  <table border="0" align="center" cellpadding="0" cellspacing="0" role="presentation">
-                    <tr>
-                      <td width="7"></td>
-                      <td align="center">
-                        <img style="width:28px;border:0px;display: inline!important;" src="images/dribbble.png" width="28" border="0" editable="true" data-icon data-image-edit data-url data-label="Dribbble" data-image-width alt="icon">
-                      </td>
-                      <td width="7"></td>
-                    </tr>
-                  </table>
-                </td>
-
-                <td data-element="black-footer-youtube" data-label="YouTube" class="rwd-on-mobile" align="center" valign="middle" height="28" style="height: 28px;">
-                  <table border="0" align="center" cellpadding="0" cellspacing="0" role="presentation">
-                    <tr>
-                      <td width="7"></td>
-                      <td align="center">
-                        <img style="width:28px;border:0px;display: inline!important;" src="images/youtube.png" width="28" border="0" editable="true" data-icon data-image-edit data-url data-label="YouTube" data-image-width alt="icon">
+                      <td class="center-text" data-text-style="Use Code" align="center" style="font-family:'Barlow',Arial,Helvetica,sans-serif;font-size:22px;line-height:26px;font-weight:700;font-style:normal;color:#0387EC;text-decoration:none;letter-spacing:4px;">
+                          <singleline>
+                            <div mc:edit data-text-edit>
+                              BL9$1@QWR
+                            </div>
+                          </singleline>
                       </td>
                     </tr>
+                    <tr>
+                      <td height="20" style="font-size:20px;line-height:20px;">&nbsp;</td>
+                    </tr>
                   </table>
+                  <!-- Content -->
                 </td>
               </tr>
             </table>
+            <!-- User Code -->
+          </td>
+        </tr>
+        <tr data-element="blue-bm-usercode" data-label="User Code">
+          <td height="30" style="font-size:30px;line-height:30px;" data-height="Spacing under paragraph">&nbsp;</td>
+        </tr>
+        <tr data-element="blue-button" data-label="Buttons">
+          <td align="center">
+            <!-- Button -->
+            <table border="0" cellspacing="0" cellpadding="0" role="presentation" align="center" class="center-float">
+              <tr>
+                <td align="center" data-border-radius-default="0,6,36" data-border-radius-custom="Buttons" data-bgcolor="Buttons" bgcolor="#0387EC" style="border-radius: 0px;">
+            <!--[if (gte mso 9)|(IE)]>
+              <table border="0" cellpadding="0" cellspacing="0" align="center">
+                <tr>
+                  <td align="center" width="35"></td>
+                  <td align="center" height="50" style="height:50px;">
+                  <![endif]-->
+                    <singleline>
+                      <a href="#" mc:edit data-button data-text-style="Buttons" style="font-family:'Barlow',Arial,Helvetica,sans-serif;font-size:16px;line-height:20px;font-weight:700;font-style:normal;color:#FFFFFF;text-decoration:none;letter-spacing:0px;padding: 15px 35px 15px 35px;display: inline-block;"><span>ACTIVATE</span></a>
+                    </singleline>
+                  <!--[if (gte mso 9)|(IE)]>
+                  </td>
+                  <td align="center" width="35"></td>
+                </tr>
+              </table>
+            <![endif]-->
+                </td>
+              </tr>
+            </table>
+            <!-- Buttons -->
           </td>
         </tr>
       </table>
-      <!-- Social Icons -->
+      <!-- content -->
     </td>
   </tr>
-  <tr data-element="black-footer-social-icons" data-label="Social Icons">
-    <td height="45" style="font-size:45px;line-height:45px;" data-height="Spacing under social icons">&nbsp;</td>
+  <tr>
+    <td height="40" style="font-size:40px;line-height:40px;" data-height="Spacing bottom">&nbsp;</td>
   </tr>
+</table>
 
-  <tr data-element="black-footer-buttons" data-label="Buttons">
+    </td>
+  </tr>
+  <!-- blue-preface-5 -->
+</table>
+
+<table border="0" align="center" cellpadding="0" cellspacing="0" role="presentation" width="100%" style="width:100%;max-width:100%;" data-module="blue-footer">
+  <!-- blue-footer -->
+  <tr>
+    <td align="center" bgcolor="#F8F8F8" data-bgcolor="BgColor" data-border-color="Footer Border Color" class="container-padding" style="border-top: 10px solid #F1F1F1;">
+      
+<!-- Content -->
+<table border="0" align="center" cellpadding="0" cellspacing="0" role="presentation" class="row" width="520" style="width:520px;max-width:520px;">
+  <tr>
+    <td height="60" style="font-size:60px;line-height:60px;" data-height="Footer spacing top">&nbsp;</td>
+  </tr>
+  <tr data-element="blue-footer-titles" data-label="Titles">
+    <td class="center-text" data-text-style="Titles" align="center" style="font-family:'Barlow',Arial,Helvetica,sans-serif;font-size:21px;line-height:28px;font-weight:700;font-style:normal;color:#444444;text-decoration:none;letter-spacing:0px;">
+        <singleline>
+          <div mc:edit data-text-edit>
+            Download our app
+          </div>
+        </singleline>
+    </td>
+  </tr>
+  <tr data-element="blue-footer-titles" data-label="Titles">
+    <td height="30" style="font-size:30px;line-height:30px;" data-height="Spacing under titles">&nbsp;</td>
+  </tr>
+  <tr data-element="blue-footer-buttons" data-label="Buttons">
     <td align="center">
       <!-- Buttons -->
       <table border="0" align="center" cellpadding="0" cellspacing="0" role="presentation" class="row" width="100%" style="width:100%;max-width:100%;">
@@ -522,11 +332,11 @@ u + #body a {color:inherit;text-decoration:none;font-size:inherit;font-family:in
           <td align="center">
             <!-- column -->
             <table border="0" align="center" cellpadding="0" cellspacing="0" role="presentation">
-              <tr data-element="black-footer-icon" data-label="Buttons">
+              <tr data-element="blue-footer-icon" data-label="Buttons">
                 <td align="center">
                   <img style="display:block;width:100%;max-width:117px;border:0px;" data-image-edit data-url data-label="App Store" width="117" src="images/App-Store.png" border="0" editable="true" alt="icon">
                 </td>
-                <td width="10" style="width:10px;"></td>
+                <td width="20" style="width: 20px;"></td>
                 <td align="center">
                   <img style="display:block;width:100%;max-width:117px;border:0px;" data-image-edit data-url data-label="Google play" width="117" src="images/Google-play.png" border="0" editable="true" alt="icon"></td>
               </tr>
@@ -538,19 +348,163 @@ u + #body a {color:inherit;text-decoration:none;font-size:inherit;font-family:in
       <!-- Buttons -->
     </td>
   </tr>
-  <tr data-element="black-footer-buttons" data-label="Buttons">
-    <td height="50" style="font-size:50px;line-height:50px;" data-height="Spacing under buttons">&nbsp;</td>
+  <tr data-element="blue-footer-buttons" data-label="Buttons">
+    <td height="60" style="font-size:60px;line-height:60px;" data-height="Spacing under buttons">&nbsp;</td>
   </tr>
-
-  <tr data-element="black-footer-paragraphs" data-label="Paragraphs">
+  <tr data-element="blue-footer-links" data-label="Footer Links">
+    <td align="center">
+      <table border="0" align="center" cellpadding="0" cellspacing="0" role="presentation">
+        <tr class="center-on-mobile">
+          <td data-element="blue-footer-1st-link" data-label="1st Link" data-text-style="Footer Links" class="rwd-on-mobile center-text" align="center" style="font-family:'Barlow',Arial,Helvetica,sans-serif;font-size:14px;line-height:24px;font-weight:300;font-style:normal;color:#666666;text-decoration:none;letter-spacing:0px;">
+            <!-- Links -->
+              <singleline>
+                <a href="#" mc:edit data-button data-text-style="Footer Links" style="font-family:'Barlow',Arial,Helvetica,sans-serif;font-size:14px;line-height:24px;font-weight:400;font-style:normal;color:#666666;text-decoration:none;letter-spacing:0px;display:inline-block;vertical-align:middle;"><span>HOME</span></a>
+              </singleline>
+            <!-- Links -->
+          </td>
+          <td data-element="blue-footer-gap-1" data-label="1st Gap" class="hide-mobile" align="center" valign="middle">
+            <table border="0" align="center" cellpadding="0" cellspacing="0" role="presentation">
+              <tr>
+                <td width="5"></td>
+                <td class="center-text" data-text-style="Paragraphs" align="center" style="font-family:'Barlow',Arial,Helvetica,sans-serif;font-size:14px;line-height:24px;font-weight:400;font-style:normal;color:#666666;text-decoration:none;letter-spacing:0px;">|</td>
+                <td width="5"></td>
+              </tr>
+            </table>
+          </td>
+          <td data-element="blue-footer-2nd-link" data-label="2nd Link" data-text-style="Footer Links" class="rwd-on-mobile center-text" align="center" style="font-family:'Barlow',Arial,Helvetica,sans-serif;font-size:14px;line-height:24px;font-weight:300;font-style:normal;color:#666666;text-decoration:none;letter-spacing:0px;">
+            <!-- Links -->
+              <singleline>
+                <a href="#" mc:edit data-button data-text-style="Footer Links" style="font-family:'Barlow',Arial,Helvetica,sans-serif;font-size:14px;line-height:24px;font-weight:400;font-style:normal;color:#666666;text-decoration:none;letter-spacing:0px;display:inline-block;vertical-align:middle;"><span>BLOG</span></a>
+              </singleline>
+            <!-- Links -->
+          </td>
+          <td data-element="blue-footer-gap-2" data-label="2nd Gap" class="hide-mobile" align="center" valign="middle">
+            <table border="0" align="center" cellpadding="0" cellspacing="0" role="presentation">
+              <tr>
+                <td width="5"></td>
+                <td class="center-text" data-text-style="Paragraphs" align="center" style="font-family:'Barlow',Arial,Helvetica,sans-serif;font-size:14px;line-height:24px;font-weight:400;font-style:normal;color:#666666;text-decoration:none;letter-spacing:0px;">|</td>
+                <td width="5"></td>
+              </tr>
+            </table>
+          </td>
+          <td data-element="blue-footer-3rd-link" data-label="3rd Link" data-text-style="Footer Links" class="rwd-on-mobile center-text" align="center" style="font-family:'Barlow',Arial,Helvetica,sans-serif;font-size:14px;line-height:24px;font-weight:300;font-style:normal;color:#666666;text-decoration:none;letter-spacing:0px;">
+            <!-- Links -->
+              <singleline>
+                <a href="#" mc:edit data-button data-text-style="Footer Links" style="font-family:'Barlow',Arial,Helvetica,sans-serif;font-size:14px;line-height:24px;font-weight:400;font-style:normal;color:#666666;text-decoration:none;letter-spacing:0px;display:inline-block;vertical-align:middle;"><span>CONTACT US</span></a>
+              </singleline>
+            <!-- Links -->
+          </td>
+          <td data-element="blue-footer-gap-3" data-label="3rd Gap" class="hide-mobile" align="center" valign="middle">
+            <table border="0" align="center" cellpadding="0" cellspacing="0" role="presentation">
+              <tr>
+                <td width="5"></td>
+                <td class="center-text" data-text-style="Paragraphs" align="center" style="font-family:'Barlow',Arial,Helvetica,sans-serif;font-size:14px;line-height:24px;font-weight:400;font-style:normal;color:#666666;text-decoration:none;letter-spacing:0px;">|</td>
+                <td width="5"></td>
+              </tr>
+            </table>
+          </td>
+          <td data-element="blue-footer-4rd-link" data-label="4rd Link" data-text-style="Footer Links" class="rwd-on-mobile center-text" align="center" style="font-family:'Barlow',Arial,Helvetica,sans-serif;font-size:14px;line-height:24px;font-weight:300;font-style:normal;color:#666666;text-decoration:none;letter-spacing:0px;">
+            <!-- Links -->
+              <singleline>
+                <a href="#" mc:edit data-button data-text-style="Footer Links" style="font-family:'Barlow',Arial,Helvetica,sans-serif;font-size:14px;line-height:24px;font-weight:400;font-style:normal;color:#666666;text-decoration:none;letter-spacing:0px;display:inline-block;vertical-align:middle;"><span>PRIVACY POLICY</span></a>
+              </singleline>
+            <!-- Links -->
+          </td>
+          <td data-element="blue-footer-gap-3" data-label="4th Gap" class="hide-mobile" align="center" valign="middle">
+            <table border="0" align="center" cellpadding="0" cellspacing="0" role="presentation">
+              <tr>
+                <td width="5"></td>
+                <td class="center-text" data-text-style="Paragraphs" align="center" style="font-family:'Barlow',Arial,Helvetica,sans-serif;font-size:14px;line-height:24px;font-weight:400;font-style:normal;color:#666666;text-decoration:none;letter-spacing:0px;">|</td>
+                <td width="5"></td>
+              </tr>
+            </table>
+          </td>
+          <td data-element="blue-footer-5th-link" data-label="5th Link" data-text-style="Footer Links" class="rwd-on-mobile center-text" align="center" style="font-family:'Barlow',Arial,Helvetica,sans-serif;font-size:14px;line-height:24px;font-weight:300;font-style:normal;color:#666666;text-decoration:none;letter-spacing:0px;">
+            <!-- Links -->
+              <singleline>
+                <a href="#" mc:edit data-button data-text-style="Footer Links" style="font-family:'Barlow',Arial,Helvetica,sans-serif;font-size:14px;line-height:24px;font-weight:400;font-style:normal;color:#666666;text-decoration:none;letter-spacing:0px;display:inline-block;vertical-align:middle;"><span>TERMS</span></a>
+              </singleline>
+            <!-- Links -->
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr data-element="blue-footer-links" data-label="Footer Links">
+    <td height="60" style="font-size:60px;line-height:60px;" data-height="Spacing under footer links">&nbsp;</td>
+  </tr>
+  <tr data-element="blue-footer-social-icons" data-label="Social Icons">
+    <td align="center">
+      <!-- Social Icons -->
+      <table border="0" align="center" cellpadding="0" cellspacing="0" role="presentation" width="100%" style="width:100%;max-width:100%;">
+        <tr>
+          <td align="center">
+            <table border="0" align="center" cellpadding="0" cellspacing="0" role="presentation">
+              <tr>
+                <td data-element="blue-footer-facebook" data-label="Facebook" class="rwd-on-mobile" align="center" valign="middle" height="36" style="height: 36px;">
+                  <table border="0" align="center" cellpadding="0" cellspacing="0" role="presentation">
+                    <tr>
+                      <td width="10"></td>
+                      <td align="center">
+                        <img style="width:36px;border:0px;display: inline!important;" src="images/Facebook.png" width="36" border="0" editable="true" data-icon data-image-edit data-url data-label="Facebook" data-image-width alt="icon">
+                      </td>
+                      <td width="10"></td>
+                    </tr>
+                  </table>
+                </td>
+                <td data-element="blue-footer-instagram" data-label="Instagram" class="rwd-on-mobile" align="center" valign="middle" height="36" style="height: 36px;">
+                  <table border="0" align="center" cellpadding="0" cellspacing="0" role="presentation">
+                    <tr>
+                      <td width="10"></td>
+                      <td align="center">
+                        <img style="width:36px;border:0px;display: inline!important;" src="images/Instagram.png" width="36" border="0" editable="true" data-icon data-image-edit data-url data-label="Instagram" data-image-width alt="icon">
+                      </td>
+                      <td width="10"></td>
+                    </tr>
+                  </table>
+                </td>
+                <td data-element="blue-footer-twitter" data-label="Twitter" class="rwd-on-mobile" align="center" valign="middle" height="36" style="height: 36px;">
+                  <table border="0" align="center" cellpadding="0" cellspacing="0" role="presentation">
+                    <tr>
+                      <td width="10"></td>
+                      <td align="center">
+                        <img style="width:36px;border:0px;display: inline!important;" src="images/Twitter.png" width="36" border="0" editable="true" data-icon data-image-edit data-url data-label="Twitter" data-image-width alt="icon">
+                      </td>
+                      <td width="10"></td>
+                    </tr>
+                  </table>
+                </td>
+                <td data-element="blue-footer-pinterest" data-label="Pinterest" class="rwd-on-mobile" align="center" valign="middle" height="36" style="height: 36px;">
+                  <table border="0" align="center" cellpadding="0" cellspacing="0" role="presentation">
+                    <tr>
+                      <td width="10"></td>
+                      <td align="center">
+                        <img style="width:36px;border:0px;display: inline!important;" src="images/Pinterest.png" width="36" border="0" editable="true" data-icon data-image-edit data-url data-label="Pinterest" data-image-width alt="icon">
+                      </td>
+                      <td width="10"></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+      <!-- Social Icons -->
+    </td>
+  </tr>
+  <tr data-element="blue-footer-social-icons" data-label="Social Icons">
+    <td height="60" style="font-size:60px;line-height:60px;" data-height="Spacing under social icons">&nbsp;</td>
+  </tr>
+  <tr data-element="blue-footer-paragraphs" data-label="Paragraphs">
     <td align="center">
       <table border="0" align="center" cellpadding="0" cellspacing="0" role="presentation" class="row" width="480" style="width:480px;max-width:480px;">
         <tr>
-          <td class="center-text" data-text-style="Paragraphs" align="center" style="font-family:'Roboto',Arial,Helvetica,sans-serif;font-size:14px;line-height:24px;font-weight:400;font-style:normal;color:#999999;text-decoration:none;letter-spacing:0px;">
+          <td class="center-text" data-text-style="Paragraphs" align="center" style="font-family:'Barlow',Arial,Helvetica,sans-serif;font-size:14px;line-height:24px;font-weight:300;font-style:normal;color:#666666;text-decoration:none;letter-spacing:0px;">
             <multiline>
               <div mc:edit data-text-edit>
-                2022 black Inc. All Rights Reserved.<br>
-                Address name St. 152, City Name, State, Country Name
+                2021 Blue Inc. All Rights Reserved.<br>
+                Address name St. 24, City Name, State, Country Name
               </div>
             </multiline>
           </td>
@@ -558,48 +512,53 @@ u + #body a {color:inherit;text-decoration:none;font-size:inherit;font-family:in
       </table>
     </td>
   </tr>
-  <tr data-element="black-footer-paragraphs" data-label="Paragraphs">
-    <td height="20" style="font-size:20px;line-height:20px;" data-height="Spacing above tags">&nbsp;</td>
+  <tr data-element="blue-footer-paragraphs" data-label="Paragraphs">
+    <td height="40" style="font-size:40px;line-height:40px;" data-height="Spacing above tags">&nbsp;</td>
   </tr>
-  <tr data-element="black-footer-tags" data-label="Tags">
+  <tr data-element="blue-footer-tags" data-label="Tags">
     <td align="center">
       <table border="0" align="center" cellpadding="0" cellspacing="0" role="presentation">
         <tr class="center-on-mobile">
-          <td data-element="black-footer-unsubscribe" data-label="Unsubscribe" data-text-style="Paragraphs" class="rwd-on-mobile center-text" align="center" style="font-family:'Roboto',Arial,Helvetica,sans-serif;font-size:14px;line-height:24px;font-weight:300;font-style:normal;color:#999999;text-decoration:none;letter-spacing:0px;">
-            <unsubscribe href="#" data-mergetag="Unsubscribe" style="font-family:'Roboto',Arial,Helvetica,sans-serif;font-size:14px;font-weight:400;line-height:24px;color:#999999;text-decoration:none;">Unsubscribe</unsubscribe>
+          <td data-element="blue-footer-unsubscribe" data-label="Unsubscribe" data-text-style="Paragraphs" class="rwd-on-mobile center-text" align="center" style="font-family:'Barlow',Arial,Helvetica,sans-serif;font-size:14px;line-height:24px;font-weight:300;font-style:normal;color:#666666;text-decoration:none;letter-spacing:0px;">
+            <unsubscribe href="#" data-mergetag="Unsubscribe" style="font-family:'Barlow',Arial,Helvetica,sans-serif;font-size:14px;font-weight:300;line-height:24px;color:#666666;text-decoration:none;">Unsubscribe</unsubscribe>
           </td>
-          <td data-element="black-footer-gap-1" data-label="1st Gap" class="hide-mobile" align="center" valign="middle">
+          <td data-element="blue-footer-gap-1" data-label="1st Gap" class="hide-mobile" align="center" valign="middle">
             <table border="0" align="center" cellpadding="0" cellspacing="0" role="presentation">
               <tr>
                 <td width="5"></td>
-                <td class="center-text" data-text-style="Paragraphs" align="center" style="font-family:'Roboto',Arial,Helvetica,sans-serif;font-size:14px;line-height:24px;font-weight:400;font-style:normal;color:#999999;text-decoration:none;letter-spacing:0px;">/</td>
+                <td class="center-text" data-text-style="Paragraphs" align="center" style="font-family:'Barlow',Arial,Helvetica,sans-serif;font-size:14px;line-height:24px;font-weight:300;font-style:normal;color:#666666;text-decoration:none;letter-spacing:0px;">|</td>
                 <td width="5"></td>
               </tr>
             </table>
           </td>
-          <td data-element="black-footer-webversion" data-label="Web version" data-text-style="Paragraphs" class="rwd-on-mobile center-text" align="center" style="font-family:'Roboto',Arial,Helvetica,sans-serif;font-size:14px;line-height:24px;font-weight:300;font-style:normal;color:#999999;text-decoration:none;letter-spacing:0px;">
-            <webversion href="#" data-mergetag="Web version" style="font-family:'Roboto',Arial,Helvetica,sans-serif;font-size:14px;font-weight:400;line-height:24px;color:#999999;text-decoration:none;">View Online</webversion>
+          <td data-element="blue-footer-webversion" data-label="Web version" data-text-style="Paragraphs" class="rwd-on-mobile center-text" align="center" style="font-family:'Barlow',Arial,Helvetica,sans-serif;font-size:14px;line-height:24px;font-weight:300;font-style:normal;color:#666666;text-decoration:none;letter-spacing:0px;">
+            <webversion href="#" data-mergetag="Web version" style="font-family:'Barlow',Arial,Helvetica,sans-serif;font-size:14px;font-weight:300;line-height:24px;color:#666666;text-decoration:none;">View on browser</webversion>
           </td>
-          <td data-element="black-footer-gap-2" data-label="2nd Gap" class="hide-mobile" align="center" valign="middle">
+          <td data-element="blue-footer-gap-2" data-label="2nd Gap" class="hide-mobile" align="center" valign="middle">
             <table border="0" align="center" cellpadding="0" cellspacing="0" role="presentation">
               <tr>
                 <td width="5"></td>
-                <td class="center-text" data-text-style="Paragraphs" align="center" style="font-family:'Roboto',Arial,Helvetica,sans-serif;font-size:14px;line-height:24px;font-weight:400;font-style:normal;color:#999999;text-decoration:none;letter-spacing:0px;">/</td>
+                <td class="center-text" data-text-style="Paragraphs" align="center" style="font-family:'Barlow',Arial,Helvetica,sans-serif;font-size:14px;line-height:24px;font-weight:300;font-style:normal;color:#666666;text-decoration:none;letter-spacing:0px;">|</td>
                 <td width="5"></td>
               </tr>
             </table>
           </td>
-          <td data-element="black-footer-forward" data-label="Forward" data-text-style="Paragraphs" class="rwd-on-mobile center-text" align="center" style="font-family:'Roboto',Arial,Helvetica,sans-serif;font-size:14px;line-height:24px;font-weight:300;font-style:normal;color:#999999;text-decoration:none;letter-spacing:0px;">
-            <forward href="#" data-mergetag="Forward" style="font-family:'Roboto',Arial,Helvetica,sans-serif;font-size:14px;font-weight:400;line-height:24px;color:#999999;text-decoration:none;">Send to a friend</forward>
+          <td data-element="blue-footer-forward" data-label="Forward" data-text-style="Paragraphs" class="rwd-on-mobile center-text" align="center" style="font-family:'Barlow',Arial,Helvetica,sans-serif;font-size:14px;line-height:24px;font-weight:300;font-style:normal;color:#666666;text-decoration:none;letter-spacing:0px;">
+            <forward href="#" data-mergetag="Forward" style="font-family:'Barlow',Arial,Helvetica,sans-serif;font-size:14px;font-weight:300;line-height:24px;color:#666666;text-decoration:none;">Forward</forward>
           </td>
         </tr>
       </table>
     </td>
   </tr>
   <tr>
-    <td height="50" style="font-size:50px;line-height:50px;" data-height="Footer spacing bottom">&nbsp;</td>
+    <td height="40" style="font-size:40px;line-height:40px;" data-height="Footer spacing bottom">&nbsp;</td>
   </tr>
-  <!-- black-footer -->
+</table>
+<!-- Content -->
+
+    </td>
+  </tr>
+  <!-- blue-footer -->
 </table>
 
     </td>
