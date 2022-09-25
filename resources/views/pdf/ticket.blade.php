@@ -1,3 +1,4 @@
-<img src="{{asset('images/reliance_logo2.jpeg')}}" alt="Logo" height="75px">
+<img src="{{public_path().'images/reliance_logo2.jpeg'}}" alt="">
+<img src="{{public_path().'/images/reliance_logo2.jpeg'}}" alt="">
 
-{{asset('images/reliance_logo.png')}}
+{{$logo_url}}
