@@ -128,7 +128,7 @@ u + #body a {color:inherit;text-decoration:none;font-size:inherit;font-family:in
 </style>
 </head>
 
-<body data-bgcolor="Body" style="margin-top: 0; margin-bottom: 0; padding-top: 0; padding-bottom: 0; width: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;" bgcolor="#000000">
+<body data-bgcolor="Body" style="margin-top: 0; margin-bottom: 0; padding-top: 0; padding-bottom: 0; width: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;" bgcolor="#FFFFFF">
 
 <span class="preheader-text" data-preheader-text style="color: transparent; height: 0; max-height: 0; max-width: 0; opacity: 0; overflow: hidden; visibility: hidden; width: 0; display: none; mso-hide: all;"></span>
 
@@ -155,8 +155,8 @@ u + #body a {color:inherit;text-decoration:none;font-size:inherit;font-family:in
   </tr>
   <tr data-element="black-logo" data-label="Logo">
     <td align="center" >
-      <div class="" style="width: 100%; height: 170px; background-color: red;">lsf</div>
-      <img style="width:189px;border:0px;display: inline!important;" src="data:image/png;base64,{{ base64_encode(file_get_contents(public_path('headerimage.jpg'))) }} width="1000" border="0" editable="true" data-icon data-image-edit data-url data-label="Logo" data-image-width alt="logo">
+      <div class="" style="width: 100%; background-image: url(data:image/png;base64,{{ base64_encode(file_get_contents(public_path('headerimage.jpg'))) }})"></div>
+      {{-- <img style="width:189px;border:0px;display: inline!important;" src="data:image/png;base64,{{ base64_encode(file_get_contents(public_path('headerimage.jpg'))) }} width="1000" border="0" editable="true" data-icon data-image-edit data-url data-label="Logo" data-image-width alt="logo"> --}}
     </td>
   </tr>
   {{-- <tr style="background-image: url({{ base64_encode(file_get_contents(public_path('headerimage.jpg'))) }}); background-size: cover;">
