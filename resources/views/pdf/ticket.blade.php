@@ -21,8 +21,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800;900&family=Rubik:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
 <style type="text/css">
 /*Basics*/
@@ -37,14 +36,18 @@ td a {text-decoration:none; color: inherit;}
 .ExternalClass {width: 100%;}
 .ExternalClass,.ExternalClass p,.ExternalClass span,.ExternalClass font,.ExternalClass td,.ExternalClass div {line-height:inherit;}
 .ReadMsgBody {width:100%; background-color: #ffffff;}
-/* iOS black LINKS */
+/* iOS BLUE LINKS */
 a[x-apple-data-detectors] {color:inherit !important; text-decoration:none !important; font-size:inherit !important; font-family:inherit !important; font-weight:inherit !important; line-height:inherit !important;} 
-/*Gmail black links*/
+/*Gmail blue links*/
 u + #body a {color:inherit;text-decoration:none;font-size:inherit;font-family:inherit;font-weight:inherit;line-height:inherit;}
 /*Buttons fix*/
 .undoreset a, .undoreset a:hover {text-decoration:none !important;}
 .yshortcuts a {border-bottom:none !important;}
 .ios-footer a {color:#aaaaaa !important;text-decoration:none;}
+/* data-outer-table="800 - 600" */
+.outer-table {width:640px!important;max-width:640px!important;}
+/* data-inner-table="780 - 540" */
+.inner-table {width:580px!important;max-width:580px!important;}
 /*Responsive-Tablet*/
 @media only screen and (max-width: 799px) and (min-width: 601px) {
   .outer-table.row {width:640px!important;max-width:640px!important;}
@@ -86,7 +89,6 @@ u + #body a {color:inherit;text-decoration:none;font-size:inherit;font-family:in
   .rwd-on-mobile {display: inline-block!important;padding: 5px!important;}
   .center-on-mobile {text-align: center!important;}
   .rwd-col {width:100%!important;max-width:100%!important;display:inline-block!important;}
-  .type48 {font-size:48px!important;line-height:58px!important;}
 }
 </style>
 <style type="text/css" class="export-delete"> 
@@ -124,7 +126,6 @@ u + #body a {color:inherit;text-decoration:none;font-size:inherit;font-family:in
   .composer--mobile .rwd-on-mobile {display: inline-block!important;padding: 5px!important;}
   .composer--mobile .center-on-mobile {text-align: center!important;}
   .composer--mobile .rwd-col {width:100%!important;max-width:100%!important;display:inline-block!important;}
-  .composer--mobile .type48 {font-size:48px!important;line-height:58px!important;}
 </style>
 </head>
 
@@ -137,105 +138,435 @@ u + #body a {color:inherit;text-decoration:none;font-size:inherit;font-family:in
 &zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;
 </div>
 
-<div data-primary-font="Roboto Slab" data-secondary-font="Roboto" style="display:none; font-size:0px; line-height:0px; max-height:0px; max-width:0px; opacity:0; overflow:hidden; visibility:hidden; mso-hide:all;"></div>
+<div data-primary-font="Barlow" data-secondary-font="Rubik" style="display:none; font-size:0px; line-height:0px; max-height:0px; max-width:0px; opacity:0; overflow:hidden; visibility:hidden; mso-hide:all;"></div>
 
 <table border="0" align="center" cellpadding="0" cellspacing="0" width="100%" style="width:100%;max-width:100%;">
   <tr><!-- Outer Table -->
-    <td align="center" data-bgcolor="Body" bgcolor="#000000" class="container-padding" data-composer>
+    <td align="center" data-bgcolor="Body" bgcolor="#FFFFFF" data-composer>
 
-<table data-outer-table border="0" align="center" cellpadding="0" cellspacing="0" class="outer-table row" role="presentation" width="580" style="width:580px;max-width:580px;" data-module="black-logo">
-  <!-- black-logo -->
+
+<table data-outer-table border="0" align="center" cellpadding="0" cellspacing="0" class="outer-table row" role="presentation" width="640" style="width:640px;max-width:640px;" data-module="blue-logo">
+  <!-- blue-logo -->
   <tr>
-    <td height="60" style="font-size:60px;line-height:60px;" data-height="Spacing top">&nbsp;</td>
+    <td align="center" bgcolor="#FFFFFF" data-bgcolor="BgColor" class="container-padding">
+
+<!-- Content -->
+<table border="0" align="center" cellpadding="0" cellspacing="0" role="presentation" width="100%" style="width:100%;max-width:100%;">
+  <tr>
+    <td height="20" style="font-size:20px;line-height:20px;" data-height="Spacing top">&nbsp;</td>
   </tr>
-  <tr data-element="black-logo" data-label="Logo">
-    <td align="center">
-      <img style="width:189px;border:0px;display: inline!important;" src="data:image/png;base64,{{ base64_encode(file_get_contents(public_path('reliance_logo2.jpeg'))) }} width="189" border="0" editable="true" data-icon data-image-edit data-url data-label="Logo" data-image-width alt="logo">
+  <tr data-element="blue-logo" data-label="Logo">
+    <td align="center" class="center-text">
+      <img style="width:120px;border:0px;display: inline!important;" src="data:image/png;base64,{{ base64_encode(file_get_contents(public_path('reliance_logo2.jpeg'))) }}" width="120" border="0" editable="true" data-icon data-image-edit data-url data-label="Logo" data-image-width alt="logo">
     </td>
   </tr>
-  <tr data-element="black-logo" data-label="Logo">
-    <td align="center" >
-      <div class="" style="width: 100%; background-image: url(data:image/png;base64,{{ base64_encode(file_get_contents(public_path('headerimage.jpg'))) }})"></div>
-      {{-- <img style="width:189px;border:0px;display: inline!important;" src="data:image/png;base64,{{ base64_encode(file_get_contents(public_path('headerimage.jpg'))) }} width="1000" border="0" editable="true" data-icon data-image-edit data-url data-label="Logo" data-image-width alt="logo"> --}}
+  <tr>
+    <td height="20" style="font-size:20px;line-height:20px;" data-height="Spacing bottom">&nbsp;</td>
+  </tr>
+</table>
+<!-- Content -->
+
     </td>
   </tr>
-  {{-- <tr style="background-image: url({{ base64_encode(file_get_contents(public_path('headerimage.jpg'))) }}); background-size: cover;">
-    <td height="30" style="font-size:30px;line-height:30px;" data-height="Spacing bottom">&nbsp;jk</td>
-  </tr> --}}
-  <!-- black-logo -->
+  <!-- blue-logo -->
 </table>
 
-<table data-outer-table border="0" align="center" cellpadding="0" cellspacing="0" class="outer-table row" role="presentation" width="580" style="width:580px;max-width:580px;" data-module="black-intro-5">
-  <!-- black-intro-5 -->
+<table data-outer-table border="0" align="center" cellpadding="0" cellspacing="0" class="outer-table row" width="640" style="width:640px;max-width:640px;" data-module="blue-header">
+  <!-- blue-header -->
   <tr>
-    <td height="30" style="font-size:30px;line-height:30px;" data-height="Spacing top">&nbsp;</td>
-  </tr>
-  <tr data-element="black-intro-5-headline" data-label="Intro Headline">
-    <td class="type48" data-text-style="Intro Headline" align="center" style="font-family:'Roboto Slab',Arial,Helvetica,sans-serif;font-size:45px;line-height:84px;font-weight:700;font-style:normal;color:#FFFFFF;text-decoration:none;letter-spacing:0px;">
-        <singleline>
-          <div mc:edit data-text-edit>
-            Hi, {{$name}}</div>
-
-            
-          
-        </singleline>
+    <td align="center" class="img-responsive container-padding">
+      <img class="auto-width" style="display:block;width:100%;max-width:100%;border:0px;" data-image-edit data-url data-label="Header image" width="640" src="data:image/png;base64,{{ base64_encode(file_get_contents(public_path('headerimage_cut.jpg'))) }}" border="0" editable="true" alt="picture">
     </td>
   </tr>
-  <tr data-element="black-intro-5-headline" data-label="Intro Headline"> 
-    <td height="20" style="font-size:20px;line-height:20px;" data-height="Spacing under headline">&nbsp;</td>
+  <!-- blue-header -->
+</table>
+
+<table data-outer-table border="0" align="center" cellpadding="0" cellspacing="0" class="outer-table row" role="presentation" width="640" style="width:640px;max-width:640px;" data-module="blue-preface-5">
+  <!-- blue-preface-5 -->
+  <tr>
+    <td align="center" bgcolor="#FFFFFF" data-bgcolor="BgColor" class="container-padding">
+
+<table data-inner-table border="0" align="center" cellpadding="0" cellspacing="0" role="presentation" class="inner-table row" width="580" style="width:580px;max-width:580px;">
+  <tr>
+    <td height="40" style="font-size:40px;line-height:40px;" data-height="Spacing top">&nbsp;</td>
   </tr>
-  <tr data-element="black-intro-5-paragraph" data-label="Intro Paragraph">
-    <td data-text-style="Intro Paragraph" align="center" style="font-family:'Roboto',Arial,Helvetica,sans-serif;font-size:18px;line-height:32px;font-weight:400;font-style:normal;color:#FFFFFF;text-decoration:none;letter-spacing:0px;">
+  <tr>
+    <td align="center" data-bgcolor="BgColor" bgcolor="#FFFFFF">
+      <!-- content -->
+      <table border="0" align="center" cellpadding="0" cellspacing="0" role="presentation" width="100%" style="width:100%;max-width:100%;">
+        <tr data-element="blue-headline" data-label="Headlines">
+          <td class="center-text" data-text-style="Headlines" align="center" style="font-family:'Barlow',Arial,Helvetica,sans-serif;font-size:48px;line-height:54px;font-weight:900;font-style:normal;color:#222222;text-decoration:none;letter-spacing:0px;">
+              <singleline>
+                <div mc:edit data-text-edit>
+                  Hi {{$name}}
+                </div>
+              </singleline>
+          </td>
+        </tr>
+        {{-- <tr data-element="blue-subline" data-label="Sublines">
+          <td class="center-text" data-text-style="Sublines" align="center" style="font-family:'Barlow',Arial,Helvetica,sans-serif;font-size:14px;line-height:24px;font-weight:900;font-style:normal;color:#50C0FF;text-decoration:none;letter-spacing:1px;">
+              <singleline>
+                <div mc:edit data-text-edit>
+                  HERE ARE YOUR RAFFLE TICKET CODE(S)
+                </div>
+              </singleline>
+          </td>
+        </tr> --}}
+
+        <tr data-element="blue-headline" data-label="Headlines">
+          <td height="15" style="font-size:15px;line-height:15px;" data-height="Spacing under headline">&nbsp;</td>
+        </tr>
+        {{-- <tr data-element="blue-paragraph" data-label="Paragraphs">
+          <td class="center-text" data-text-style="Paragraphs" align="center" style="font-family:'Barlow',Arial,Helvetica,sans-serif;font-size:16px;line-height:26px;font-weight:400;font-style:normal;color:#333333;text-decoration:none;letter-spacing:0px;">
+              <singleline>
+                <div mc:edit data-text-edit>
+                 Pleas keep these code(s) safe.
+                </div>
+              </singleline>
+          </td>
+        </tr> --}}
+        <tr data-element="blue-header-paragraph" data-label="Paragraphs">
+          <td height="25" style="font-size:25px;line-height:25px;" data-height="Spacing under paragraph">&nbsp;</td>
+        </tr>
+
+    
+        <tr data-element="blue-bm-usercode" data-label="User Code">
+          <td align="center">
+            <!-- Use Code -->
+            <table border="0" cellspacing="0" cellpadding="0" role="presentation" align="center" class="row" width="80%" style="width:80%;max-width:80%;">
+              <tr>
+                <td align="center" data-bgcolor="User Code" bgcolor="#F8F8F8" style="border-radius: 0px;">
+                  <!-- Content -->
+                  <table border="0" cellspacing="0" cellpadding="0" role="presentation" align="center" class="row" width="100%" style="width:100%;max-width:100%;">
+                    <tr>
+                      <td height="20" style="font-size:20px;line-height:20px;">&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td class="center-text" data-text-style="Use Code" align="center" style="font-family:'Barlow',Arial,Helvetica,sans-serif;font-size:22px;line-height:26px;font-weight:700;font-style:normal;color:#0387EC;text-decoration:none;letter-spacing:4px;">
+                          <singleline>
+                            <div mc:edit data-text-edit>
+                              {{$lottery_code}}
+                            </div>
+                          </singleline>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td height="20" style="font-size:20px;line-height:20px;">&nbsp;</td>
+                    </tr>
+                  </table>
+                  <!-- Content -->
+                </td>
+              </tr>
+            </table>
+            <!-- User Code -->
+          </td>
+        </tr>
+        <tr data-element="blue-bm-usercode" data-label="User Code">
+          <td height="30" style="font-size:30px;line-height:30px;" data-height="Spacing under paragraph">&nbsp;</td>
+        </tr>
+        <tr data-element="blue-button" data-label="Buttons">
+          <td align="center">
+            <!-- Button -->
+            <table border="0" cellspacing="0" cellpadding="0" role="presentation" align="center" class="center-float">
+              <tr>
+                <td align="center" data-border-radius-default="0,6,36" data-border-radius-custom="Buttons" data-bgcolor="Buttons" bgcolor="#0387EC" style="border-radius: 0px;">
+            <!--[if (gte mso 9)|(IE)]>
+              <table border="0" cellpadding="0" cellspacing="0" align="center">
+                <tr>
+                  <td align="center" width="35"></td>
+                  <td align="center" height="50" style="height:50px;">
+                  <![endif]-->
+                    {{-- <singleline>
+                      <a href="{{$dat['lottery_ticket_url']}}" mc:edit data-button data-text-style="Buttons" style="font-family:'Barlow',Arial,Helvetica,sans-serif;font-size:16px;line-height:20px;font-weight:700;font-style:normal;color:#FFFFFF;text-decoration:none;letter-spacing:0px;padding: 15px 35px 15px 35px;display: inline-block;"><span>DOWNLOAD TICKETS</span></a>
+                    </singleline> --}}
+                  <!--[if (gte mso 9)|(IE)]>
+                  </td>
+                  <td align="center" width="35"></td>
+                </tr>
+              </table>
+            <![endif]-->
+                </td>
+              </tr>
+            </table>
+            <!-- Buttons -->
+          </td>
+        </tr>
+      
+
+
+
+      </table>
+      <!-- content -->
+    </td>
+  </tr>
+  <tr>
+    <td height="40" style="font-size:40px;line-height:40px;" data-height="Spacing bottom">&nbsp;</td>
+  </tr>
+</table>
+
+    </td>
+  </tr>
+  <!-- blue-preface-5 -->
+</table>
+
+<table border="0" align="center" cellpadding="0" cellspacing="0" role="presentation" width="100%" style="width:100%;max-width:100%;" data-module="blue-footer">
+  <!-- blue-footer -->
+  <tr>
+    <td align="center" bgcolor="#F8F8F8" data-bgcolor="BgColor" data-border-color="Footer Border Color" class="container-padding" style="border-top: 10px solid #F1F1F1;">
+      
+<!-- Content -->
+<table border="0" align="center" cellpadding="0" cellspacing="0" role="presentation" class="row" width="520" style="width:520px;max-width:520px;">
+  <tr>
+    <td height="60" style="font-size:60px;line-height:60px;" data-height="Footer spacing top">&nbsp;</td>
+  </tr>
+  {{-- <tr data-element="blue-footer-titles" data-label="Titles">
+    <td class="center-text" data-text-style="Titles" align="center" style="font-family:'Barlow',Arial,Helvetica,sans-serif;font-size:21px;line-height:28px;font-weight:700;font-style:normal;color:#444444;text-decoration:none;letter-spacing:0px;">
         <singleline>
           <div mc:edit data-text-edit>
-              BIG WINS AHEAD
+            Download our app
           </div>
         </singleline>
     </td>
+  </tr> --}}
+  <tr data-element="blue-footer-titles" data-label="Titles">
+    <td height="30" style="font-size:30px;line-height:30px;" data-height="Spacing under titles">&nbsp;</td>
   </tr>
-  <tr data-element="black-intro-5-paragraph" data-label="Intro Paragraph">
-    <td height="40" style="font-size:40px;line-height:40px;" data-height="Spacing under paragraph">&nbsp;</td>
-  </tr>
-  <tr data-element="black-intro-usercode" data-label="User Code">
+  {{-- <tr data-element="blue-footer-buttons" data-label="Buttons">
     <td align="center">
-      <!-- Use Code -->
-      <table border="0" cellspacing="0" cellpadding="0" role="presentation" align="center" class="row" width="580" style="width:580px;max-width:580px;">
+      <!-- Buttons -->
+      <table border="0" align="center" cellpadding="0" cellspacing="0" role="presentation" class="row" width="100%" style="width:100%;max-width:100%;">
         <tr>
-          <td align="center" data-border-radius-default="0,6,36" data-border-radius-custom="User Code" data-bgcolor="User Code" bgcolor="#000000" style="border-radius: 10px;border: 3px dotted #FF0076;">
-            <!-- Content -->
-            <table border="0" cellspacing="0" cellpadding="0" role="presentation" align="center" class="row" width="580" style="width:580px;max-width:580px;">
-              <tr>
-                <td height="26" style="font-size:26px;line-height:26px;">&nbsp;</td>
-              </tr>
-              <tr>
-                <td class="center-text" data-text-style="Use Code" align="center" style="font-family:'Roboto Slab',Arial,Helvetica,sans-serif;font-size:32px;line-height:36px;font-weight:400;font-style:normal;color:#999999;text-decoration:none;letter-spacing:0px;">
-                    <singleline>
-                      <div mc:edit data-text-edit>
-                        Ticket Code: <span style="color:#FFFFFF;">{{$lottery_code}}</span>
-                      </div>
-                    </singleline>
+          <td align="center">
+            <!-- column -->
+            <table border="0" align="center" cellpadding="0" cellspacing="0" role="presentation">
+              <tr data-element="blue-footer-icon" data-label="Buttons">
+                <td align="center">
+                  <img style="display:block;width:100%;max-width:117px;border:0px;" data-image-edit data-url data-label="App Store" width="117" src="images/App-Store.png" border="0" editable="true" alt="icon">
                 </td>
-              </tr>
-              <tr>
-                <td height="26" style="font-size:26px;line-height:26px;">&nbsp;</td>
+                <td width="20" style="width: 20px;"></td>
+                <td align="center">
+                  <img style="display:block;width:100%;max-width:117px;border:0px;" data-image-edit data-url data-label="Google play" width="117" src="images/Google-play.png" border="0" editable="true" alt="icon"></td>
               </tr>
             </table>
-            <!-- Content -->
+            <!-- column -->
           </td>
         </tr>
       </table>
-      <!-- User Code -->
+      <!-- Buttons -->
+    </td>
+  </tr> --}}
+  <tr data-element="blue-footer-buttons" data-label="Buttons">
+    <td height="60" style="font-size:60px;line-height:60px;" data-height="Spacing under buttons">&nbsp;</td>
+  </tr>
+  {{-- <tr data-element="blue-footer-links" data-label="Footer Links">
+    <td align="center">
+      <table border="0" align="center" cellpadding="0" cellspacing="0" role="presentation">
+        <tr class="center-on-mobile">
+          <td data-element="blue-footer-1st-link" data-label="1st Link" data-text-style="Footer Links" class="rwd-on-mobile center-text" align="center" style="font-family:'Barlow',Arial,Helvetica,sans-serif;font-size:14px;line-height:24px;font-weight:300;font-style:normal;color:#666666;text-decoration:none;letter-spacing:0px;">
+            <!-- Links -->
+              <singleline>
+                <a href="#" mc:edit data-button data-text-style="Footer Links" style="font-family:'Barlow',Arial,Helvetica,sans-serif;font-size:14px;line-height:24px;font-weight:400;font-style:normal;color:#666666;text-decoration:none;letter-spacing:0px;display:inline-block;vertical-align:middle;"><span>HOME</span></a>
+              </singleline>
+            <!-- Links -->
+          </td>
+          <td data-element="blue-footer-gap-1" data-label="1st Gap" class="hide-mobile" align="center" valign="middle">
+            <table border="0" align="center" cellpadding="0" cellspacing="0" role="presentation">
+              <tr>
+                <td width="5"></td>
+                <td class="center-text" data-text-style="Paragraphs" align="center" style="font-family:'Barlow',Arial,Helvetica,sans-serif;font-size:14px;line-height:24px;font-weight:400;font-style:normal;color:#666666;text-decoration:none;letter-spacing:0px;">|</td>
+                <td width="5"></td>
+              </tr>
+            </table>
+          </td>
+          <td data-element="blue-footer-2nd-link" data-label="2nd Link" data-text-style="Footer Links" class="rwd-on-mobile center-text" align="center" style="font-family:'Barlow',Arial,Helvetica,sans-serif;font-size:14px;line-height:24px;font-weight:300;font-style:normal;color:#666666;text-decoration:none;letter-spacing:0px;">
+            <!-- Links -->
+              <singleline>
+                <a href="#" mc:edit data-button data-text-style="Footer Links" style="font-family:'Barlow',Arial,Helvetica,sans-serif;font-size:14px;line-height:24px;font-weight:400;font-style:normal;color:#666666;text-decoration:none;letter-spacing:0px;display:inline-block;vertical-align:middle;"><span>BLOG</span></a>
+              </singleline>
+            <!-- Links -->
+          </td>
+          <td data-element="blue-footer-gap-2" data-label="2nd Gap" class="hide-mobile" align="center" valign="middle">
+            <table border="0" align="center" cellpadding="0" cellspacing="0" role="presentation">
+              <tr>
+                <td width="5"></td>
+                <td class="center-text" data-text-style="Paragraphs" align="center" style="font-family:'Barlow',Arial,Helvetica,sans-serif;font-size:14px;line-height:24px;font-weight:400;font-style:normal;color:#666666;text-decoration:none;letter-spacing:0px;">|</td>
+                <td width="5"></td>
+              </tr>
+            </table>
+          </td>
+          <td data-element="blue-footer-3rd-link" data-label="3rd Link" data-text-style="Footer Links" class="rwd-on-mobile center-text" align="center" style="font-family:'Barlow',Arial,Helvetica,sans-serif;font-size:14px;line-height:24px;font-weight:300;font-style:normal;color:#666666;text-decoration:none;letter-spacing:0px;">
+            <!-- Links -->
+              <singleline>
+                <a href="#" mc:edit data-button data-text-style="Footer Links" style="font-family:'Barlow',Arial,Helvetica,sans-serif;font-size:14px;line-height:24px;font-weight:400;font-style:normal;color:#666666;text-decoration:none;letter-spacing:0px;display:inline-block;vertical-align:middle;"><span>CONTACT US</span></a>
+              </singleline>
+            <!-- Links -->
+          </td>
+          <td data-element="blue-footer-gap-3" data-label="3rd Gap" class="hide-mobile" align="center" valign="middle">
+            <table border="0" align="center" cellpadding="0" cellspacing="0" role="presentation">
+              <tr>
+                <td width="5"></td>
+                <td class="center-text" data-text-style="Paragraphs" align="center" style="font-family:'Barlow',Arial,Helvetica,sans-serif;font-size:14px;line-height:24px;font-weight:400;font-style:normal;color:#666666;text-decoration:none;letter-spacing:0px;">|</td>
+                <td width="5"></td>
+              </tr>
+            </table>
+          </td>
+          <td data-element="blue-footer-4rd-link" data-label="4rd Link" data-text-style="Footer Links" class="rwd-on-mobile center-text" align="center" style="font-family:'Barlow',Arial,Helvetica,sans-serif;font-size:14px;line-height:24px;font-weight:300;font-style:normal;color:#666666;text-decoration:none;letter-spacing:0px;">
+            <!-- Links -->
+              <singleline>
+                <a href="#" mc:edit data-button data-text-style="Footer Links" style="font-family:'Barlow',Arial,Helvetica,sans-serif;font-size:14px;line-height:24px;font-weight:400;font-style:normal;color:#666666;text-decoration:none;letter-spacing:0px;display:inline-block;vertical-align:middle;"><span>PRIVACY POLICY</span></a>
+              </singleline>
+            <!-- Links -->
+          </td>
+          <td data-element="blue-footer-gap-3" data-label="4th Gap" class="hide-mobile" align="center" valign="middle">
+            <table border="0" align="center" cellpadding="0" cellspacing="0" role="presentation">
+              <tr>
+                <td width="5"></td>
+                <td class="center-text" data-text-style="Paragraphs" align="center" style="font-family:'Barlow',Arial,Helvetica,sans-serif;font-size:14px;line-height:24px;font-weight:400;font-style:normal;color:#666666;text-decoration:none;letter-spacing:0px;">|</td>
+                <td width="5"></td>
+              </tr>
+            </table>
+          </td>
+          <td data-element="blue-footer-5th-link" data-label="5th Link" data-text-style="Footer Links" class="rwd-on-mobile center-text" align="center" style="font-family:'Barlow',Arial,Helvetica,sans-serif;font-size:14px;line-height:24px;font-weight:300;font-style:normal;color:#666666;text-decoration:none;letter-spacing:0px;">
+            <!-- Links -->
+              <singleline>
+                <a href="#" mc:edit data-button data-text-style="Footer Links" style="font-family:'Barlow',Arial,Helvetica,sans-serif;font-size:14px;line-height:24px;font-weight:400;font-style:normal;color:#666666;text-decoration:none;letter-spacing:0px;display:inline-block;vertical-align:middle;"><span>TERMS</span></a>
+              </singleline>
+            <!-- Links -->
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr> --}}
+  <tr data-element="blue-footer-links" data-label="Footer Links">
+    <td height="60" style="font-size:60px;line-height:60px;" data-height="Spacing under footer links">&nbsp;</td>
+  </tr>
+  {{-- <tr data-element="blue-footer-social-icons" data-label="Social Icons">
+    <td align="center">
+      <!-- Social Icons -->
+      <table border="0" align="center" cellpadding="0" cellspacing="0" role="presentation" width="100%" style="width:100%;max-width:100%;">
+        <tr>
+          <td align="center">
+            <table border="0" align="center" cellpadding="0" cellspacing="0" role="presentation">
+              <tr>
+                <td data-element="blue-footer-facebook" data-label="Facebook" class="rwd-on-mobile" align="center" valign="middle" height="36" style="height: 36px;">
+                  <table border="0" align="center" cellpadding="0" cellspacing="0" role="presentation">
+                    <tr>
+                      <td width="10"></td>
+                      <td align="center">
+                        <img style="width:36px;border:0px;display: inline!important;" src="images/Facebook.png" width="36" border="0" editable="true" data-icon data-image-edit data-url data-label="Facebook" data-image-width alt="icon">
+                      </td>
+                      <td width="10"></td>
+                    </tr>
+                  </table>
+                </td>
+                <td data-element="blue-footer-instagram" data-label="Instagram" class="rwd-on-mobile" align="center" valign="middle" height="36" style="height: 36px;">
+                  <table border="0" align="center" cellpadding="0" cellspacing="0" role="presentation">
+                    <tr>
+                      <td width="10"></td>
+                      <td align="center">
+                        <img style="width:36px;border:0px;display: inline!important;" src="images/Instagram.png" width="36" border="0" editable="true" data-icon data-image-edit data-url data-label="Instagram" data-image-width alt="icon">
+                      </td>
+                      <td width="10"></td>
+                    </tr>
+                  </table>
+                </td>
+                <td data-element="blue-footer-twitter" data-label="Twitter" class="rwd-on-mobile" align="center" valign="middle" height="36" style="height: 36px;">
+                  <table border="0" align="center" cellpadding="0" cellspacing="0" role="presentation">
+                    <tr>
+                      <td width="10"></td>
+                      <td align="center">
+                        <img style="width:36px;border:0px;display: inline!important;" src="images/Twitter.png" width="36" border="0" editable="true" data-icon data-image-edit data-url data-label="Twitter" data-image-width alt="icon">
+                      </td>
+                      <td width="10"></td>
+                    </tr>
+                  </table>
+                </td>
+                <td data-element="blue-footer-pinterest" data-label="Pinterest" class="rwd-on-mobile" align="center" valign="middle" height="36" style="height: 36px;">
+                  <table border="0" align="center" cellpadding="0" cellspacing="0" role="presentation">
+                    <tr>
+                      <td width="10"></td>
+                      <td align="center">
+                        <img style="width:36px;border:0px;display: inline!important;" src="images/Pinterest.png" width="36" border="0" editable="true" data-icon data-image-edit data-url data-label="Pinterest" data-image-width alt="icon">
+                      </td>
+                      <td width="10"></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+      <!-- Social Icons -->
+    </td>
+  </tr> --}}
+  <tr data-element="blue-footer-social-icons" data-label="Social Icons">
+    <td height="60" style="font-size:60px;line-height:60px;" data-height="Spacing under social icons">&nbsp;</td>
+  </tr>
+  <tr data-element="blue-footer-paragraphs" data-label="Paragraphs">
+    <td align="center">
+      <table border="0" align="center" cellpadding="0" cellspacing="0" role="presentation" class="row" width="480" style="width:480px;max-width:480px;">
+        <tr>
+          <td class="center-text" data-text-style="Paragraphs" align="center" style="font-family:'Barlow',Arial,Helvetica,sans-serif;font-size:14px;line-height:24px;font-weight:300;font-style:normal;color:#666666;text-decoration:none;letter-spacing:0px;">
+            <multiline>
+              <div mc:edit data-text-edit>
+                2022 Reliance Thrift. All Rights Reserved.<br>
+                Suite D6/D7, Nymez Plaza, Opposite Oando Fuel Station, Gado Nasko Nasko Road, NNPC Junction, Kubwa, Abuja, Abuja, Nigeria
+              </div>
+            </multiline>
+          </td>
+        </tr>
+      </table>
     </td>
   </tr>
-  
-  
-  {{-- <tr>
-    <td height="30" style="font-size:30px;line-height:30px;" data-height="Spacing bottom">&nbsp;</td>
-  </tr> --}}
-  <!-- black-intro-5 -->
+  <tr data-element="blue-footer-paragraphs" data-label="Paragraphs">
+    <td height="40" style="font-size:40px;line-height:40px;" data-height="Spacing above tags">&nbsp;</td>
+  </tr>
+  <tr data-element="blue-footer-tags" data-label="Tags">
+    <td align="center">
+      {{-- <table border="0" align="center" cellpadding="0" cellspacing="0" role="presentation">
+        <tr class="center-on-mobile">
+          <td data-element="blue-footer-unsubscribe" data-label="Unsubscribe" data-text-style="Paragraphs" class="rwd-on-mobile center-text" align="center" style="font-family:'Barlow',Arial,Helvetica,sans-serif;font-size:14px;line-height:24px;font-weight:300;font-style:normal;color:#666666;text-decoration:none;letter-spacing:0px;">
+            <unsubscribe href="#" data-mergetag="Unsubscribe" style="font-family:'Barlow',Arial,Helvetica,sans-serif;font-size:14px;font-weight:300;line-height:24px;color:#666666;text-decoration:none;">Unsubscribe</unsubscribe>
+          </td>
+          <td data-element="blue-footer-gap-1" data-label="1st Gap" class="hide-mobile" align="center" valign="middle">
+            <table border="0" align="center" cellpadding="0" cellspacing="0" role="presentation">
+              <tr>
+                <td width="5"></td>
+                <td class="center-text" data-text-style="Paragraphs" align="center" style="font-family:'Barlow',Arial,Helvetica,sans-serif;font-size:14px;line-height:24px;font-weight:300;font-style:normal;color:#666666;text-decoration:none;letter-spacing:0px;">|</td>
+                <td width="5"></td>
+              </tr>
+            </table>
+          </td>
+          <td data-element="blue-footer-webversion" data-label="Web version" data-text-style="Paragraphs" class="rwd-on-mobile center-text" align="center" style="font-family:'Barlow',Arial,Helvetica,sans-serif;font-size:14px;line-height:24px;font-weight:300;font-style:normal;color:#666666;text-decoration:none;letter-spacing:0px;">
+            <webversion href="#" data-mergetag="Web version" style="font-family:'Barlow',Arial,Helvetica,sans-serif;font-size:14px;font-weight:300;line-height:24px;color:#666666;text-decoration:none;">View on browser</webversion>
+          </td>
+          <td data-element="blue-footer-gap-2" data-label="2nd Gap" class="hide-mobile" align="center" valign="middle">
+            <table border="0" align="center" cellpadding="0" cellspacing="0" role="presentation">
+              <tr>
+                <td width="5"></td>
+                <td class="center-text" data-text-style="Paragraphs" align="center" style="font-family:'Barlow',Arial,Helvetica,sans-serif;font-size:14px;line-height:24px;font-weight:300;font-style:normal;color:#666666;text-decoration:none;letter-spacing:0px;">|</td>
+                <td width="5"></td>
+              </tr>
+            </table>
+          </td>
+          <td data-element="blue-footer-forward" data-label="Forward" data-text-style="Paragraphs" class="rwd-on-mobile center-text" align="center" style="font-family:'Barlow',Arial,Helvetica,sans-serif;font-size:14px;line-height:24px;font-weight:300;font-style:normal;color:#666666;text-decoration:none;letter-spacing:0px;">
+            <forward href="#" data-mergetag="Forward" style="font-family:'Barlow',Arial,Helvetica,sans-serif;font-size:14px;font-weight:300;line-height:24px;color:#666666;text-decoration:none;">Forward</forward>
+          </td>
+        </tr>
+      </table> --}}
+    </td>
+  </tr>
+  <tr>
+    <td height="40" style="font-size:40px;line-height:40px;" data-height="Footer spacing bottom">&nbsp;</td>
+  </tr>
 </table>
+<!-- Content -->
 
-
+    </td>
+  </tr>
+  <!-- blue-footer -->
+</table>
 
     </td>
   </tr><!-- Outer-Table -->
