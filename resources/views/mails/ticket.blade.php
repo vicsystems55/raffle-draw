@@ -194,24 +194,25 @@ u + #body a {color:inherit;text-decoration:none;font-size:inherit;font-family:in
     <td align="center" data-bgcolor="BgColor" bgcolor="#FFFFFF">
       <!-- content -->
       <table border="0" align="center" cellpadding="0" cellspacing="0" role="presentation" width="100%" style="width:100%;max-width:100%;">
-        <tr data-element="blue-subline" data-label="Sublines">
-          <td class="center-text" data-text-style="Sublines" align="center" style="font-family:'Barlow',Arial,Helvetica,sans-serif;font-size:14px;line-height:24px;font-weight:900;font-style:normal;color:#50C0FF;text-decoration:none;letter-spacing:1px;">
-              <singleline>
-                <div mc:edit data-text-edit>
-                  YOU'RE ALMOST THERE
-                </div>
-              </singleline>
-          </td>
-        </tr>
         <tr data-element="blue-headline" data-label="Headlines">
           <td class="center-text" data-text-style="Headlines" align="center" style="font-family:'Barlow',Arial,Helvetica,sans-serif;font-size:48px;line-height:54px;font-weight:900;font-style:normal;color:#222222;text-decoration:none;letter-spacing:0px;">
               <singleline>
                 <div mc:edit data-text-edit>
-                  ACTIVATE USING THE FOLLOWING CODE
+                  Hi {{$data['name']}}
                 </div>
               </singleline>
           </td>
         </tr>
+        <tr data-element="blue-subline" data-label="Sublines">
+          <td class="center-text" data-text-style="Sublines" align="center" style="font-family:'Barlow',Arial,Helvetica,sans-serif;font-size:14px;line-height:24px;font-weight:900;font-style:normal;color:#50C0FF;text-decoration:none;letter-spacing:1px;">
+              <singleline>
+                <div mc:edit data-text-edit>
+                  HERE ARE YOUR RAFFLE TICKET CODE(S)
+                </div>
+              </singleline>
+          </td>
+        </tr>
+
         <tr data-element="blue-headline" data-label="Headlines">
           <td height="15" style="font-size:15px;line-height:15px;" data-height="Spacing under headline">&nbsp;</td>
         </tr>
@@ -219,7 +220,7 @@ u + #body a {color:inherit;text-decoration:none;font-size:inherit;font-family:in
           <td class="center-text" data-text-style="Paragraphs" align="center" style="font-family:'Barlow',Arial,Helvetica,sans-serif;font-size:16px;line-height:26px;font-weight:400;font-style:normal;color:#333333;text-decoration:none;letter-spacing:0px;">
               <singleline>
                 <div mc:edit data-text-edit>
-                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi accus antium iste natus.
+                 Pleas keep these code(s) safe.
                 </div>
               </singleline>
           </td>
@@ -227,6 +228,8 @@ u + #body a {color:inherit;text-decoration:none;font-size:inherit;font-family:in
         <tr data-element="blue-header-paragraph" data-label="Paragraphs">
           <td height="25" style="font-size:25px;line-height:25px;" data-height="Spacing under paragraph">&nbsp;</td>
         </tr>
+
+        @foreach ($data['data'] as $dat)
         <tr data-element="blue-bm-usercode" data-label="User Code">
           <td align="center">
             <!-- Use Code -->
@@ -242,7 +245,7 @@ u + #body a {color:inherit;text-decoration:none;font-size:inherit;font-family:in
                       <td class="center-text" data-text-style="Use Code" align="center" style="font-family:'Barlow',Arial,Helvetica,sans-serif;font-size:22px;line-height:26px;font-weight:700;font-style:normal;color:#0387EC;text-decoration:none;letter-spacing:4px;">
                           <singleline>
                             <div mc:edit data-text-edit>
-                              BL9$1@QWR
+                              {{$dat['lottery_code']}}
                             </div>
                           </singleline>
                       </td>
@@ -274,7 +277,7 @@ u + #body a {color:inherit;text-decoration:none;font-size:inherit;font-family:in
                   <td align="center" height="50" style="height:50px;">
                   <![endif]-->
                     <singleline>
-                      <a href="#" mc:edit data-button data-text-style="Buttons" style="font-family:'Barlow',Arial,Helvetica,sans-serif;font-size:16px;line-height:20px;font-weight:700;font-style:normal;color:#FFFFFF;text-decoration:none;letter-spacing:0px;padding: 15px 35px 15px 35px;display: inline-block;"><span>ACTIVATE</span></a>
+                      <a href="{{$dat['lottery_ticket_url']}}" mc:edit data-button data-text-style="Buttons" style="font-family:'Barlow',Arial,Helvetica,sans-serif;font-size:16px;line-height:20px;font-weight:700;font-style:normal;color:#FFFFFF;text-decoration:none;letter-spacing:0px;padding: 15px 35px 15px 35px;display: inline-block;"><span>DOWNLOAD TICKETS</span></a>
                     </singleline>
                   <!--[if (gte mso 9)|(IE)]>
                   </td>
@@ -288,6 +291,10 @@ u + #body a {color:inherit;text-decoration:none;font-size:inherit;font-family:in
             <!-- Buttons -->
           </td>
         </tr>
+        @endforeach
+
+
+
       </table>
       <!-- content -->
     </td>
@@ -312,7 +319,7 @@ u + #body a {color:inherit;text-decoration:none;font-size:inherit;font-family:in
   <tr>
     <td height="60" style="font-size:60px;line-height:60px;" data-height="Footer spacing top">&nbsp;</td>
   </tr>
-  <tr data-element="blue-footer-titles" data-label="Titles">
+  {{-- <tr data-element="blue-footer-titles" data-label="Titles">
     <td class="center-text" data-text-style="Titles" align="center" style="font-family:'Barlow',Arial,Helvetica,sans-serif;font-size:21px;line-height:28px;font-weight:700;font-style:normal;color:#444444;text-decoration:none;letter-spacing:0px;">
         <singleline>
           <div mc:edit data-text-edit>
@@ -320,11 +327,11 @@ u + #body a {color:inherit;text-decoration:none;font-size:inherit;font-family:in
           </div>
         </singleline>
     </td>
-  </tr>
+  </tr> --}}
   <tr data-element="blue-footer-titles" data-label="Titles">
     <td height="30" style="font-size:30px;line-height:30px;" data-height="Spacing under titles">&nbsp;</td>
   </tr>
-  <tr data-element="blue-footer-buttons" data-label="Buttons">
+  {{-- <tr data-element="blue-footer-buttons" data-label="Buttons">
     <td align="center">
       <!-- Buttons -->
       <table border="0" align="center" cellpadding="0" cellspacing="0" role="presentation" class="row" width="100%" style="width:100%;max-width:100%;">
@@ -347,11 +354,11 @@ u + #body a {color:inherit;text-decoration:none;font-size:inherit;font-family:in
       </table>
       <!-- Buttons -->
     </td>
-  </tr>
+  </tr> --}}
   <tr data-element="blue-footer-buttons" data-label="Buttons">
     <td height="60" style="font-size:60px;line-height:60px;" data-height="Spacing under buttons">&nbsp;</td>
   </tr>
-  <tr data-element="blue-footer-links" data-label="Footer Links">
+  {{-- <tr data-element="blue-footer-links" data-label="Footer Links">
     <td align="center">
       <table border="0" align="center" cellpadding="0" cellspacing="0" role="presentation">
         <tr class="center-on-mobile">
@@ -429,7 +436,7 @@ u + #body a {color:inherit;text-decoration:none;font-size:inherit;font-family:in
         </tr>
       </table>
     </td>
-  </tr>
+  </tr> --}}
   <tr data-element="blue-footer-links" data-label="Footer Links">
     <td height="60" style="font-size:60px;line-height:60px;" data-height="Spacing under footer links">&nbsp;</td>
   </tr>
@@ -503,8 +510,8 @@ u + #body a {color:inherit;text-decoration:none;font-size:inherit;font-family:in
           <td class="center-text" data-text-style="Paragraphs" align="center" style="font-family:'Barlow',Arial,Helvetica,sans-serif;font-size:14px;line-height:24px;font-weight:300;font-style:normal;color:#666666;text-decoration:none;letter-spacing:0px;">
             <multiline>
               <div mc:edit data-text-edit>
-                2021 Blue Inc. All Rights Reserved.<br>
-                Address name St. 24, City Name, State, Country Name
+                2022 Reliance Thrift. All Rights Reserved.<br>
+                Suite D6/D7, Nymez Plaza, Opposite Oando Fuel Station, Gado Nasko Nasko Road, NNPC Junction, Kubwa, Abuja, Abuja, Nigeria
               </div>
             </multiline>
           </td>
@@ -517,7 +524,7 @@ u + #body a {color:inherit;text-decoration:none;font-size:inherit;font-family:in
   </tr>
   <tr data-element="blue-footer-tags" data-label="Tags">
     <td align="center">
-      <table border="0" align="center" cellpadding="0" cellspacing="0" role="presentation">
+      {{-- <table border="0" align="center" cellpadding="0" cellspacing="0" role="presentation">
         <tr class="center-on-mobile">
           <td data-element="blue-footer-unsubscribe" data-label="Unsubscribe" data-text-style="Paragraphs" class="rwd-on-mobile center-text" align="center" style="font-family:'Barlow',Arial,Helvetica,sans-serif;font-size:14px;line-height:24px;font-weight:300;font-style:normal;color:#666666;text-decoration:none;letter-spacing:0px;">
             <unsubscribe href="#" data-mergetag="Unsubscribe" style="font-family:'Barlow',Arial,Helvetica,sans-serif;font-size:14px;font-weight:300;line-height:24px;color:#666666;text-decoration:none;">Unsubscribe</unsubscribe>
@@ -547,7 +554,7 @@ u + #body a {color:inherit;text-decoration:none;font-size:inherit;font-family:in
             <forward href="#" data-mergetag="Forward" style="font-family:'Barlow',Arial,Helvetica,sans-serif;font-size:14px;font-weight:300;line-height:24px;color:#666666;text-decoration:none;">Forward</forward>
           </td>
         </tr>
-      </table>
+      </table> --}}
     </td>
   </tr>
   <tr>
