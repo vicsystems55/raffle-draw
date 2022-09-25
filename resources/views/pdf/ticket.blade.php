@@ -150,7 +150,7 @@ u + #body a {color:inherit;text-decoration:none;font-size:inherit;font-family:in
   </tr>
   <tr data-element="black-logo" data-label="Logo">
     <td align="center">
-      <img style="width:189px;border:0px;display: inline!important;" src="images/logo.png" width="189" border="0" editable="true" data-icon data-image-edit data-url data-label="Logo" data-image-width alt="logo">
+      <img style="width:189px;border:0px;display: inline!important;" src="{{config('app.url')}}images/reliance_logo.png" width="189" border="0" editable="true" data-icon data-image-edit data-url data-label="Logo" data-image-width alt="logo">
     </td>
   </tr>
   <tr>
@@ -165,7 +165,7 @@ u + #body a {color:inherit;text-decoration:none;font-size:inherit;font-family:in
     <td height="30" style="font-size:30px;line-height:30px;" data-height="Spacing top">&nbsp;</td>
   </tr>
   <tr data-element="black-intro-5-headline" data-label="Intro Headline">
-    <td class="type48" data-text-style="Intro Headline" align="center" style="font-family:'Roboto Slab',Arial,Helvetica,sans-serif;font-size:64px;line-height:84px;font-weight:700;font-style:normal;color:#FFFFFF;text-decoration:none;letter-spacing:0px;">
+    <td class="type48" data-text-style="Intro Headline" align="center" style="font-family:'Roboto Slab',Arial,Helvetica,sans-serif;font-size:45px;line-height:84px;font-weight:700;font-style:normal;color:#FFFFFF;text-decoration:none;letter-spacing:0px;">
         <singleline>
           <div mc:edit data-text-edit>
             Hi, {{$name}}</div>

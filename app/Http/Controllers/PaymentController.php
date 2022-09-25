@@ -49,7 +49,8 @@ class PaymentController extends Controller
             
                     $pdf = PDF::loadView('pdf.ticket', [
                         'name' => $request->name,
-                        'lottery_code' => $lottery_code
+                        'lottery_code' => $lottery_code,
+                        'logo_url' => config('app.url').'images/reliance_logo.png',
                     ])->setPaper('a4', 'landscape')->setOptions(['defaultFont' => 'sans-serif']);
             
                     $file_name = rand(123, 1233);

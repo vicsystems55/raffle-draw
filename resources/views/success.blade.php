@@ -53,7 +53,7 @@
 				<div class="brand-logo d-none d-lg-inline-block">
 					<div class="logo">
 						<a href="index.html">
-							<img src="assets/images/logo/logo.pg" alt="logo">
+							<img src="{{config('app.url')}}raffle/assets/images/logo/logo.png" alt="logo">
 						</a>
 					</div>
 				</div>
@@ -130,7 +130,7 @@
 				<h2 class="pageheader-title">error page</h2>
 				<nav aria-label="breadcrumb">
 					<ol class="breadcrumb justify-content-center mb-0">
-						<li class="breadcrumb-item"><a href="index.html">Home</a></li>
+						<li class="breadcrumb-item"><a href="">Home</a></li>
 						<li class="breadcrumb-item active" aria-current="page">error page</li>
 					</ol>
 				</nav>
@@ -150,8 +150,8 @@
 					</div>
 					<div class="zero-content">
 						<h2>You have successfully purchased your ticket.</h2>
-						<p>Details have been sent to your email.<i class="icofont-worried"></i></p>
-						<a href="index.html" class="default-button reverse-effect"><span>Go Back to Home <i  class="icofont-double-right"></i></span> </a>
+						<p>Details have been sent to your email.</p>
+						<a href="/" class="default-button reverse-effect"><span>Go Back to Home <i  class="icofont-double-right"></i></span> </a>
 					</div>
 				</div>
 			</div>
