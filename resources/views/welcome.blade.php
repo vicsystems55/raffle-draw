@@ -222,7 +222,7 @@
 	<section class="collection-section padding-top padding-bottom">
 		<div class="container">
 			<div class="section-header">
-				<h2>welcome to reliance raffle</h2>
+				<h2>STEPS</h2>
 			</div>
 			<div class="section-wrapper game">
 				<div class="row g-4 justify-content-center">
@@ -233,8 +233,8 @@
 									<img src="{{config('app.url')}}raffle/assets/images/game/01.png" alt="game-img">
 								</div>
 								<div class="game__content">
-									<h4>Purchase Tickets</h4>
-									<p></p>
+									<h4>TICKET PURCHASE</h4>
+									<p>STEP 1</p>
 								</div>
 							</div>
 						</div>
@@ -247,7 +247,7 @@
 								</div>
 								<div class="game__content">
 									<h4>Email Confirmation</h4>
-									<p></p>
+									<p>STEP 2</p>
 								</div>
 							</div>
 						</div>
@@ -259,8 +259,8 @@
 									<img src="{{config('app.url')}}raffle/assets/images/game/03.png" alt="game-img">
 								</div>
 								<div class="game__content">
-									<h4>Download Tickets</h4>
-									<p></p>
+									<h4>TICKET DOWNLOAD</h4>
+									<p>STEP 3</p>
 								</div>
 							</div>
 						</div>
