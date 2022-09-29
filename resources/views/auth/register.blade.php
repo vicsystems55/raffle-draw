@@ -47,7 +47,7 @@
 
 
 	<!-- ==========Header Section Starts Here========== -->
-	<header class="header-section">
+	<header class="header-section ">
 		<div class="container">
 			<div class="header-holder d-flex flex-wrap justify-content-between align-items-center">
 				<div class="brand-logo d-none d-lg-inline-block">
@@ -95,12 +95,12 @@
 							<div class="menu-area">
 								<ul class="menu">
 									
-									<li><a href="contact.html">Home</a></li>
-                                    <li><a href="contact.html">Raffle Tickets</a></li>
+									<li><a href="/">Home</a></li>
+                                    {{-- <li><a href="contact.html">Raffle Tickets</a></li> --}}
 
 								</ul>
-								<a href="" class="login"><i class="icofont-user"></i> <span>LOG IN</span> </a>
-								<a href="" class="signup"><i class="icofont-users"></i> <span>SIGN UP</span></a>
+								{{-- <a href="" class="login"><i class="icofont-user"></i> <span>LOG IN</span> </a> --}}
+								<a href="/register" class="signup"><i class="icofont-users"></i> <span>PURCHASE TICKETS</span></a>
 
 								<!-- toggle icons -->
 								<div class="header-bar d-lg-none">
@@ -124,7 +124,7 @@
 
 
 	<!-- ===========Banner Section start Here========== -->
-	<section class="pageheader-section " style="background-image: url(assets/images/pageheader/bg.jpg);">
+	<section class="pageheader-section " style="padding-top: 150px; padding-bottom: 50px; background-image: url(assets/images/pageheader/bg.jpg);">
 		<div class="container">
             <div class="section-wrapper text-center text-uppercase">
                 <h2 class="pageheader-title">Registration Page</h2>
@@ -213,10 +213,10 @@
                         <div class="footer-top-item lab-item">
                             <div class="lab-inner">
                                 <div class="lab-thumb">
-                                    <img src="assets/images/footer/icons/01.png" alt="Phone-icon">
+                                    <img src="{{config('app.url')}}raffle/assets/images/footer/icons/01.png" alt="Phone-icon"> 
                                 </div>
                                 <div class="lab-content">
-                                    <span>Phone Number : +88012 345 678 912</span>
+                                    <span>Phone :+234 806 388 3990, +234 806 388 3990, +234 806 388 3990</span>
                                 </div>
                             </div>
                         </div>
@@ -225,10 +225,10 @@
                         <div class="footer-top-item lab-item">
                             <div class="lab-inner">
                                 <div class="lab-thumb">
-                                    <img src="assets/images/footer/icons/02.png" alt="email-icon">
+                                    <img src="{{config('app.url')}}raffle/assets/images/footer/icons/02.png" alt="email-icon"> 
                                 </div>
                                 <div class="lab-content">
-                                    <span>Email : youremail@gmail.com</span>
+                                    <span>Email : support@reliancecooperative.com</span>
                                 </div>
                             </div>
                         </div>
@@ -237,10 +237,10 @@
                         <div class="footer-top-item lab-item">
                             <div class="lab-inner">
                                 <div class="lab-thumb">
-                                    <img src="assets/images/footer/icons/03.png" alt="location-icon">
+                                    <img src="{{config('app.url')}}raffle/assets/images/footer/icons/03.png" alt="location-icon">
                                 </div>
                                 <div class="lab-content">
-                                    <span>Address : 30 North West New York</span>
+                                    <span>Suite D6/D7, Nymez Plaza, Kubwa, Abuja</span>
                                 </div>
                             </div>
                         </div>
@@ -251,18 +251,18 @@
         <div class="footer-middle padding-top padding-bottom">
             <div class="container">
                 <div class="row padding-lg-top">
-                    <div class="col-lg-4 col-md-6 col-12">
+                    <div class="col-lg-12 col-md-12 col-12 text-center">
                         <div class="footer-middle-item-wrapper">
                             <div class="footer-middle-item mb-lg-0">
-                                <div class="fm-item-title mb-4">
+                                <div class="fm-item-title mb-4 mt-3">
                                     <img src="{{config('app.url')}}raffle/assets/images/logo/logo.png" alt="logo">
                                 </div>
                                 <div class="fm-item-content">
-                                    <p class="mb-4">Upropriate brand economca sound technolog after covalent technology enable prospective wastng markets whereas propriate and brand economca sound technolog</p>
-									<ul class="match-social-list d-flex flex-wrap align-items-center">
-										<li><a href="#"><img src="assets/images/match/social-1.png" alt="vimeo"></a></li>
-										<li><a href="#"><img src="assets/images/match/social-2.png" alt="youtube"></a></li>
-										<li><a href="#"><img src="assets/images/match/social-3.png" alt="twitch"></a></li>
+                                    <p class="mb-4 "></p>
+									<ul class="match-social-list d-flex justify-content-center">
+										<li><a href="https://www.facebook.com/reliancecoopltd"><img src="{{config('app.url')}}raffle/assets/images/match/social-1.png" alt="vimeo"></a></li>
+										<li><a href="https://twitter.com/reliancecoop1?s=11&t=NPCoCtlYAlaFwG0_eo3RBQ"><img src="{{config('app.url')}}raffle/assets/images/match/social-2.png" alt="youtube"></a></li>
+										<li><a href="https://instagram.com/reliancecooperative?igshid=NjZiMGI4OTY="><img src="{{config('app.url')}}raffle/assets/images/match/social-3.png" alt="twitch"></a></li>
 									</ul>
                                 </div>
                             </div>
@@ -278,7 +278,7 @@
                                     <div class="fm-item-widget lab-item">
                                         <div class="lab-inner">
                                             <div class="lab-thumb">
-                                                <a href="#"> <img src="assets/images/footer/01.jpg" alt="footer-widget-img" class="rounded-3"></a>
+                                                <a href="#"> <img src="{{config('app.url')}}raffle/assets/images/footer/01.jpg" alt="footer-widget-img" class="rounded-3"></a>
                                             </div>
                                             <div class="lab-content">
                                                 <a href="blog-single.html"><h6>free Poker Game</h6></a>
@@ -296,7 +296,7 @@
                                     <div class="fm-item-widget lab-item">
                                         <div class="lab-inner">
                                             <div class="lab-thumb">
-                                                <a href="#"><img src="assets/images/footer/02.jpg" alt="footer-widget-img" class="rounded-3"></a>
+                                                <a href="#"><img src="{{config('app.url')}}raffle/assets/images/footer/02.jpg" alt="footer-widget-img" class="rounded-3"></a>
                                             </div>
                                             <div class="lab-content">
                                                 <a href="blog-single.html"><h6>CLUB Poker Game</h6></a>
@@ -314,7 +314,7 @@
                                     <div class="fm-item-widget lab-item">
                                         <div class="lab-inner">
                                             <div class="lab-thumb">
-                                                <a href="#"><img src="assets/images/footer/03.jpg" alt="footer-widget-img" class="rounded-3"></a>
+                                                <a href="#"><img src="{{config('app.url')}}raffle/assets/images/footer/03.jpg" alt="footer-widget-img" class="rounded-3"></a>
                                             </div>
                                             <div class="lab-content">
                                                 <a href="blog-single.html"><h6>ROYAL Poker Game</h6></a>
@@ -333,7 +333,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-12">
+                    <div class="col-lg-4 col-md-6 col-12 d-none">
                         <div class="footer-middle-item-wrapper">
                             <div class="footer-middle-item-3 mb-lg-0">
                                 <div class="fm-item-title">
@@ -341,7 +341,7 @@
                                 </div>
                                 <div class="fm-item-content">
                                     <p>Casina esports organization supported by community leaders</p>
-                                    <form>
+                                    {{-- <form>
                                         <div class="form-group mb-4">
                                             <input type="text" class="form-control" placeholder="Your Name">
                                         </div>
@@ -349,7 +349,7 @@
                                             <input type="email" class="form-control" placeholder="Your Email">
                                         </div>
 										<button type="submit" class="default-button"><span>Send Massage <i class="icofont-circled-right"></i></span></button>
-                                    </form>
+                                    </form> --}}
                                 </div>
                             </div>
                         </div>

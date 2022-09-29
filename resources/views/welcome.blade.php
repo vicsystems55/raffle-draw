@@ -145,11 +145,11 @@
 										</ul>
 									</li> --}}
 									<li><a href="/">Home</a></li>
-                                    <li><a href="/">Raffle Tickets</a></li>
+                                    {{-- <li><a href="/">Raffle Tickets</a></li> --}}
                                     
 								</ul>
-								<a href="" class="login"><i class="icofont-user"></i> <span>LOG IN</span> </a>
-								<a href="" class="signup"><i class="icofont-users"></i> <span>SIGN UP</span></a>
+								{{-- <a href="" class="login"><i class="icofont-user"></i> <span>LOG IN</span> </a> --}}
+								<a href="/register" class="signup"><i class="icofont-users"></i> <span>PURCHASE TICKETS</span></a>
 
 								<!-- toggle icons -->
 								<div class="header-bar d-lg-none">
@@ -182,7 +182,7 @@
 						<h1>Raffle Tickets</h1>
 						<h2>Hurry now, its here again</h2>
 						<p></p>
-						<a href="{{route('register')}}" class="default-button"><span>join us today  <i class="icofont-play-alt-1"></i></span> </a>
+						<a href="{{route('register')}}" class="default-button"><span>PURCHASE TICKETS  <i class="icofont-play-alt-1"></i></span> </a>
 					</div>
 				</div>
 			</div>
@@ -206,7 +206,7 @@
 							<ul class="d-flex flex-wrap">
 								
 								<li class="counter-text border-count">
-									<h3 class="counter__number odometer mb-0" data-odometer-final="2251259">0</h3>
+									<h3 class="counter__number odometer mb-0" data-odometer-final="{{$count}}">0</h3>
 								</li>
 							</ul>
 						</div>
@@ -233,8 +233,8 @@
 									<img src="{{config('app.url')}}raffle/assets/images/game/01.png" alt="game-img">
 								</div>
 								<div class="game__content">
-									<h4><a href="team-single.html">Advice And Guide</a> </h4>
-									<p>Holisticly underwhe fully researched deliverables for revoluonary sourcess skills and technically sound</p>
+									<h4>Purchase Tickets</h4>
+									<p></p>
 								</div>
 							</div>
 						</div>
@@ -246,8 +246,8 @@
 									<img src="{{config('app.url')}}raffle/assets/images/game/02.png" alt="game-img">
 								</div>
 								<div class="game__content">
-									<h4><a href="team-single.html">Great Solutions</a> </h4>
-									<p>Holisticly underwhe fully researched deliverables for revoluonary sourcess skills and technically sound</p>
+									<h4>Email Confirmation</h4>
+									<p></p>
 								</div>
 							</div>
 						</div>
@@ -259,8 +259,8 @@
 									<img src="{{config('app.url')}}raffle/assets/images/game/03.png" alt="game-img">
 								</div>
 								<div class="game__content">
-									<h4><a href="team-single.html">Support in Person</a> </h4>
-									<p>Holisticly underwhe fully researched deliverables for revoluonary sourcess skills and technically sound</p>
+									<h4>Download Tickets</h4>
+									<p></p>
 								</div>
 							</div>
 						</div>
@@ -589,7 +589,7 @@
 								</div>
 								<div class="game__content">
 									<h4><a href="#">PAYMENT LIMITATION</a> </h4>
-									<p>Holisticly underwhe fully researched deliverables for revoluonary sourcess skills and technically sound</p>
+									<p></p>
 								</div>
 							</div>
 						</div>
@@ -602,7 +602,7 @@
 								</div>
 								<div class="game__content">
 									<h4><a href="team-single.html">Great Solutions</a> </h4>
-									<p>Holisticly underwhe fully researched deliverables for revoluonary sourcess skills and technically sound</p>
+									<p></p>
 								</div>
 							</div>
 						</div>
@@ -615,7 +615,7 @@
 								</div>
 								<div class="game__content">
 									<h4><a href="team-single.html">Support in Person</a> </h4>
-									<p>Holisticly underwhe fully researched deliverables for revoluonary sourcess skills and technically sound</p>
+									<p></p>
 								</div>
 							</div>
 						</div>
@@ -743,8 +743,8 @@
 			<div class="row justify-content-center flex-row-reverse">
 				<div class="col-lg-6 col-12">
 					<div class="faq-right-part">
-						<div class="faq-thumb">
-							<img src="{{config('app.url')}}images/headerimage.jpg" alt="faq-thumb">
+						<div class="faq-thumb ">
+							<img src="{{config('app.url')}}images/headerimage.jpg" style="width: 430px;" alt="faq-thumb">
 						</div>
 					</div>
 				</div>
@@ -752,7 +752,7 @@
 					<div class="faq-left-part">
 						<div class="section-header text-start">
 							<h2>FREQUENTLY ASK QUESTION</h2>
-							<p>At Modeltheme we show only the best websites and portfolios built completely with passion simplicity and creativity !</p>
+							<p></p>
 						</div>
 						<div class="section-wrapper">
 							<ul class="accordion">
@@ -762,11 +762,11 @@
 											<div class="icon"></div>
 										</div>
 										<div class="right">
-											<h6>01. How do I create an Account ?</h6>
+											<h6>01. How do I play?</h6>
 										</div>
 									</div>
 									<div class="accordion-answer">
-										<p>Competen diseminate mpactful proceses with client centered Holistic maximize multimedia based supply chains for resourc channels e-leveling action items.</p>
+										<p>You can participate in the raffle draw by purchasing a ticket.</p>
 									</div>
 								</li>
 								<li class="accordion-item">
@@ -775,11 +775,11 @@
 											<div class="icon"></div>
 										</div>
 										<div class="right">
-											<h6>02. Where can I Redeem My Price ?</h6>
+											<h6>02. How do I purchase a ticket?</h6>
 										</div>
 									</div>
 									<div class="accordion-answer active">
-										<p>Competen diseminate mpactful proceses with client centered Holistic maximize multimedia based supply chains for resourc channels e-leveling action items.</p>
+										<p>You can either purchase through an agent of the cooperative or through our website.</p>
 									</div>
 								</li>
 								<li class="accordion-item">
@@ -788,11 +788,12 @@
 											<div class="icon"></div>
 										</div>
 										<div class="right">
-											<h6>03. How do I Start Playing ?</h6>
+											<h6>03. Can I buy more than on ticket?</h6>
 										</div>
 									</div>
 									<div class="accordion-answer">
-										<p>Competen diseminate mpactful proceses with client centered Holistic maximize multimedia based supply chains for resourc channels e-leveling action items.</p>
+										<p>Yes you can. All you need to do is increase the the number of tickets to purchased. A ticket cost N1000
+										</p>
 									</div>
 								</li>
 								<li class="accordion-item">
@@ -801,11 +802,25 @@
 											<div class="icon"></div>
 										</div>
 										<div class="right">
-											<h6>04. How do I Move Up a Level ?</h6>
+											<h6>04. How do I redeem my price?</h6>
 										</div>
 									</div>
 									<div class="accordion-answer">
-										<p>Competen diseminate mpactful proceses with client centered Holistic maximize multimedia based supply chains for resourc channels e-leveling action items.</p>
+										<p>If you purchased your ticket online, a mail containing your ticket would be sent to you. You are expected to come to the event on the day of the draw with this ticket. T&C apply</p>
+									</div>
+								</li>
+
+								<li class="accordion-item">
+									<div class="accordion-list">
+										<div class="left">
+											<div class="icon"></div>
+										</div>
+										<div class="right">
+											<h6>04. When is the event?</h6>
+										</div>
+									</div>
+									<div class="accordion-answer">
+										<p>The event is on the 3rd of December 2022 at Algos Hotel and Suite, Kubwa.</p>
 									</div>
 								</li>
 							</ul>
@@ -820,7 +835,7 @@
 
 
 	<!-- ===========Game Section Ends Here========== -->
-    <div class="game game-style3 overflow-hidden d-none" style="background-image:url(assets/images/game/bg.jpg)">
+    <div class="game game-style3 overflow-hidden d-none" style="background-image:url(assets/images/game/bg.jpg); background-size: contain;">
         <div class="container d-none">
             <div class="section-wrapper">
 				<div class="row justify-content-center g-4 align-items-center">
@@ -991,11 +1006,11 @@
                                     <img src="{{config('app.url')}}raffle/assets/images/logo/logo.png" alt="logo">
                                 </div>
                                 <div class="fm-item-content">
-                                    <p class="mb-4">Products and services designed to help you reach your financial goals with ease and much convenience.</p>
+                                    <p class="mb-4 "></p>
 									<ul class="match-social-list d-flex justify-content-center">
-										<li><a href="#"><img src="{{config('app.url')}}raffle/assets/images/match/social-1.png" alt="vimeo"></a></li>
-										<li><a href="#"><img src="{{config('app.url')}}raffle/assets/images/match/social-2.png" alt="youtube"></a></li>
-										<li><a href="#"><img src="{{config('app.url')}}raffle/assets/images/match/social-3.png" alt="twitch"></a></li>
+										<li><a href="https://www.facebook.com/reliancecoopltd"><img src="{{config('app.url')}}raffle/assets/images/match/social-1.png" alt="vimeo"></a></li>
+										<li><a href="https://twitter.com/reliancecoop1?s=11&t=NPCoCtlYAlaFwG0_eo3RBQ"><img src="{{config('app.url')}}raffle/assets/images/match/social-2.png" alt="youtube"></a></li>
+										<li><a href="https://instagram.com/reliancecooperative?igshid=NjZiMGI4OTY="><img src="{{config('app.url')}}raffle/assets/images/match/social-3.png" alt="twitch"></a></li>
 									</ul>
                                 </div>
                             </div>

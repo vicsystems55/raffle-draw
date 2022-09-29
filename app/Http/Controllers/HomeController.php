@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use App\LotteryTicketOrder;
+
 class HomeController extends Controller
 {
     /**
@@ -23,7 +25,13 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+
+        $lottery_order = LotteryTicketOrder::latest()->get()->count();
+
+
+        return view('welcome', [
+            'count' => $lottery_order
+        ]);
     }
 
 
